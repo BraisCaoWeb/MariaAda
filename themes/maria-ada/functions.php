@@ -121,11 +121,11 @@ add_action( 'widgets_init', 'maria_ada_widgets_init' );
  */
 function maria_ada_scripts() {
 	wp_enqueue_style( 'maria-ada-style', get_stylesheet_uri() );
-	wp_enqueue_style( 'maria-ada-style-main', get_template_directory_uri() . '/css/mariaada,css' );
+	wp_enqueue_style( 'maria-ada-style-main', get_template_directory_uri() . '/css/mariaada.css' );
 
 	wp_enqueue_script( 'maria-ada-navigation', get_template_directory_uri() . '/js/navigation.js', array(), '20151215', true );
 	
-	wp_enqueue_script( 'maria-ada-scripts-main', get_template_directory_uri() . '/js/bundled.js');
+	wp_enqueue_script( 'maria-ada-scripts-main', get_template_directory_uri() . '/js/main.min.js');
 
 	wp_enqueue_script( 'maria-ada-skip-link-focus-fix', get_template_directory_uri() . '/js/skip-link-focus-fix.js', array(), '20151215', true );
 

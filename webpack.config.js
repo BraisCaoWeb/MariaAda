@@ -5,12 +5,12 @@ const BrowserSyncPlugin = require("browser-sync-webpack-plugin");
 module.exports = {
     entry: [
         "babel-polyfill",
-        settings.themeLocation + "js/index.js",
+        settings.themeLocation + "js/main.js",
         settings.themeLocation + "sass/main.scss"
     ],
     output: {
         path: path.resolve(__dirname, settings.themeLocation + "js"),
-        filename: "bundled.js"
+        filename: "main.min.js"
     },
     module: {
         rules: [
