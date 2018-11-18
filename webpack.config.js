@@ -1,6 +1,6 @@
 const path = require("path");
 const settings = require("./settings");
-const BrowserSyncPlugin = require('browser-sync-webpack-plugin');
+const BrowserSyncPlugin = require("browser-sync-webpack-plugin");
 
 module.exports = {
     entry: [
@@ -43,16 +43,10 @@ module.exports = {
         ]
     },
     plugins: [
-      
-        new BrowserSyncPlugin( {
-                proxy: settings.urlToPreview,
-                files: [
-                    '**/*.php',
-                    '**/*.css',
-                    '**/*.js'
-                ],
-                reloadDelay: 0
-            }
-        )
+        new BrowserSyncPlugin({
+            proxy: settings.urlToPreview,
+            files: ["**/*.php", "**/*.css", "**/*.js"],
+            reloadDelay: 0
+        })
     ]
 };
