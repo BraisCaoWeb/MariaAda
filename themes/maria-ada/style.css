@@ -880,19 +880,23 @@ ORDER: Base + Typography > general layout + grid > page layout > components
   box-sizing: inherit; }
 
 html {
-  font-size: 62.5%;
-  /* 10px/16px esto se hace para que el usuario pueda cambiar el tamaño de fuente en el navegador */ }
+  /* 1rem = 10px => 10px/16px = 0.625 */
+  font-size: 62.5%; }
   @media (max-width: 75em) {
     html {
+      /* width less than 1200px? (75em*16px = 1200px) => 1rem = 9px */
       font-size: 56.25%; } }
   @media (max-width: 56.25em) {
     html {
+      /* width less than 900px? => 1rem = 8px */
       font-size: 50%; } }
   @media (max-width: 37.5em) {
     html {
+      /* width less than 600px? => 1rem = 8px */
       font-size: 50%; } }
   @media (min-width: 112.5em) {
     html {
+      /* width more than 1800px? => 1rem = 12px */
       font-size: 75%; } }
 
 body {
