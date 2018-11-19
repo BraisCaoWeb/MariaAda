@@ -25,8 +25,8 @@ module.exports = {
                     {
                         loader: "file-loader",
                         options: {
-                            name: "mariaada.css",
-                            outputPath: "../css/"
+                            name: "style.css",
+                            outputPath: "../"
                         }
                     },
                     {
