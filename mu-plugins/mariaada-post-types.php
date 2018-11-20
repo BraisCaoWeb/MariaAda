@@ -23,7 +23,7 @@ function mariaada_post_types(){
         'labels' => array(
             'name' => 'Trabajos',
             'add_new_item' => 'Añadir nuevo trabajo',
-            'edit_item' => 'Edita Trabajo',
+            'edit_item' => 'Editar Trabajo',
             'all_items' => 'Todos los Trabajos',
             'singular_name' => 'Trabajo'
         ),
