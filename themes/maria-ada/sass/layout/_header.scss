@@ -3,7 +3,7 @@
     position: fixed;
     left: 0;
     top: 0;
-    height: 100vh;
+    height: 100%;
     background-color: $color-grey-light;
     text-align: center;
 
@@ -49,9 +49,18 @@
         flex-basis: 8rem;
         width: 90%;
         font-size: 4rem;
-        justify-content: space-evenly;
+        justify-content: space-around;
         align-items: center;
         border: 2px solid $color-primary;
+        padding: 0 2rem;
+
+        & .slink{
+            transition: linear all 0.2s;
+        }
+
+        & .slink:hover{
+            transform: scale(1.1);
+        }
 
         & .fa-facebook-square{
             color:#3b5998

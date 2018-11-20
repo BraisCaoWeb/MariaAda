@@ -915,7 +915,7 @@ body {
   position: fixed;
   left: 0;
   top: 0;
-  height: 100vh;
+  height: 100%;
   background-color: #FBFBFB;
   text-align: center; }
   .site-header__container {
@@ -950,9 +950,14 @@ body {
     flex-basis: 8rem;
     width: 90%;
     font-size: 4rem;
-    justify-content: space-evenly;
+    justify-content: space-around;
     align-items: center;
-    border: 2px solid #FFDA00; }
+    border: 2px solid #FFDA00;
+    padding: 0 2rem; }
+    .site-header__social .slink {
+      transition: linear all 0.2s; }
+    .site-header__social .slink:hover {
+      transform: scale(1.1); }
     .site-header__social .fa-facebook-square {
       color: #3b5998; }
     .site-header__social .fa-linkedin-in {
@@ -976,21 +981,21 @@ body {
   text-transform: uppercase;
   font-size: 1.4rem;
   letter-spacing: 0.2rem; }
-  .navigation .menu-item {
-    text-align: center; }
 
 .navigation a {
   display: inline-block;
   width: 90%;
   padding: 1.5rem;
-  border: 2px solid transparent; }
+  border: 2px solid transparent;
+  transition: linear all 0.2s; }
 
 .navigation a:hover {
   border: 2px solid #FFDA00; }
 
 .main-content {
+  position: absolute;
   width: calc(100% - 30rem);
   margin-left: 30rem;
-  height: 100vh;
+  height: 100%;
   background-size: cover;
   background-position: center; }
