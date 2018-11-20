@@ -879,9 +879,17 @@ ORDER: Base + Typography > general layout + grid > page layout > components
   padding: 0;
   box-sizing: inherit; }
 
+a, a:visited {
+  color: #2D2D2D;
+  text-decoration: none; }
+
+ul {
+  margin: 0; }
+
 html {
   /* 1rem = 10px => 10px/16px = 0.625 */
-  font-size: 62.5%; }
+  font-size: 62.5%;
+  overflow-y: hidden; }
   @media (max-width: 75em) {
     html {
       /* width less than 1200px? (75em*16px = 1200px) => 1rem = 9px */
@@ -901,3 +909,88 @@ html {
 
 body {
   box-sizing: border-box; }
+
+.site-header {
+  width: 30rem;
+  position: fixed;
+  left: 0;
+  top: 0;
+  height: 100vh;
+  background-color: #FBFBFB;
+  text-align: center; }
+  .site-header__container {
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center; }
+  .site-header__logo-wrapper {
+    font-family: Montserrat;
+    text-transform: uppercase;
+    letter-spacing: 0.4em;
+    flex-basis: 180px;
+    flex-shrink: 1;
+    display: flex;
+    align-items: center;
+    font-weight: 300;
+    line-height: 1; }
+  .site-header__logo {
+    font-size: 2.2rem;
+    letter-spacing: 1rem; }
+  .site-header__logo-sub {
+    display: block;
+    text-transform: lowercase;
+    font-size: 0.9rem;
+    letter-spacing: 0.4em; }
+  .site-header__menu {
+    flex-grow: 4;
+    width: 100%; }
+  .site-header__social {
+    display: flex;
+    flex-basis: 8rem;
+    width: 90%;
+    font-size: 4rem;
+    justify-content: space-evenly;
+    align-items: center;
+    border: 2px solid #FFDA00; }
+    .site-header__social .fa-facebook-square {
+      color: #3b5998; }
+    .site-header__social .fa-linkedin-in {
+      color: #4875B4; }
+    .site-header__social .fa-instagram {
+      color: #bc2a8d; }
+  .site-header__footer {
+    flex-grow: 1;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    font-size: 1.1rem;
+    color: #828282; }
+    .site-header__footer span {
+      display: block;
+      line-height: 2; }
+
+.navigation .menu {
+  list-style: none;
+  font-family: Roboto;
+  text-transform: uppercase;
+  font-size: 1.4rem;
+  letter-spacing: 0.2rem; }
+  .navigation .menu-item {
+    text-align: center; }
+
+.navigation a {
+  display: inline-block;
+  width: 90%;
+  padding: 1.5rem;
+  border: 2px solid transparent; }
+
+.navigation a:hover {
+  border: 2px solid #FFDA00; }
+
+.main-content {
+  width: calc(100vw - 30rem);
+  margin-left: 30rem;
+  height: 100vh;
+  background-size: cover;
+  background-position: center; }

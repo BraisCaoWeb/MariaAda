@@ -6,9 +6,19 @@
     box-sizing: inherit;
 }
 
+a,a:visited{
+    color: $color-grey-dark;
+    text-decoration: none;
+}
+
+ul {
+    margin: 0;
+}
+
 html {
     /* 1rem = 10px => 10px/16px = 0.625 */
     font-size: 62.5%;
+    overflow-y: hidden;
 
     @include respond(tab-land) {
         /* width less than 1200px? (75em*16px = 1200px) => 1rem = 9px */

@@ -1,0 +1,83 @@
+.site-header{
+    width: 30rem;
+    position: fixed;
+    left: 0;
+    top: 0;
+    height: 100vh;
+    background-color: $color-grey-light;
+    text-align: center;
+
+    &__container{
+        height: 100%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+
+    &__logo-wrapper{
+        font-family: Montserrat;
+        text-transform: uppercase;
+        letter-spacing: 0.4em;
+        flex-basis: 180px;
+        flex-shrink: 1;
+        display: flex;
+        align-items: center;
+        font-weight: 300;
+        line-height: 1;
+    }
+
+    &__logo{
+        font-size: 2.2rem;
+        letter-spacing: 1rem;
+    }
+
+    &__logo-sub{
+        display: block;
+        text-transform: lowercase;
+        font-size: 0.9rem;
+        letter-spacing: 0.4em;
+    }
+
+    &__menu{
+        flex-grow: 4;
+        width: 100%;
+    }
+
+    &__social{
+        display: flex;
+        flex-basis: 8rem;
+        width: 90%;
+        font-size: 4rem;
+        justify-content: space-evenly;
+        align-items: center;
+        border: 2px solid $color-primary;
+
+        & .fa-facebook-square{
+            color:#3b5998
+        }
+        & .fa-linkedin-in{
+            color:#4875B4;
+        }
+        & .fa-instagram{
+            color:#bc2a8d;
+        }
+
+        &>*{
+            
+        }
+    }
+
+    &__footer{
+        flex-grow: 1;
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
+        font-size: 1.1rem;
+        color: $color-grey;
+        & span{
+            display: block;
+            line-height: 2;
+        }
+    }
+}

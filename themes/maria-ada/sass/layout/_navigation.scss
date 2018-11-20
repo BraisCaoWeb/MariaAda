@@ -1,0 +1,24 @@
+.navigation{
+    & .menu{
+        list-style: none;
+        font-family: Roboto;
+        text-transform: uppercase;
+        font-size: 1.4rem;
+        letter-spacing: 0.2rem;
+
+        &-item{
+            text-align: center;
+        }
+    }
+
+    & a{
+        display: inline-block;
+        width: 90%;
+        padding: 1.5rem;
+        border: 2px solid transparent;
+    }
+
+    & a:hover{
+        border: 2px solid $color-primary;
+    }
+}

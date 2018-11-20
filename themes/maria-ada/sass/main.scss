@@ -1,4 +1,18 @@
 @import "base/underscores";
 /* INICIO DE MIS ESTILOS */
+//ABSTRACT
 @import "abstract/mixins";
+@import "abstract/variables";
+
+//BASE
 @import "base/base";
+@import "base/typography";
+
+//COMPONENTS
+
+//LAYOUT
+@import "layout/header";
+@import "layout/navigation";
+
+//PAGES
+@import "pages/portada";
