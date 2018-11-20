@@ -998,3 +998,21 @@ body {
   height: 100%;
   background-size: cover;
   background-position: center; }
+
+.portfolio-container {
+  position: relative;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around; }
+
+.portfolio-item {
+  flex-basis: 400px;
+  display: flex;
+  align-items: center;
+  justify-content: center; }
+  .portfolio-item__title {
+    position: absolute;
+    color: #FBFBFB;
+    font-family: Montserrat;
+    text-transform: uppercase;
+    font-size: 1.8rem; }
