@@ -888,8 +888,7 @@ ul {
 
 html {
   /* 1rem = 10px => 10px/16px = 0.625 */
-  font-size: 62.5%;
-  overflow-y: hidden; }
+  font-size: 62.5%; }
   @media (max-width: 75em) {
     html {
       /* width less than 1200px? (75em*16px = 1200px) => 1rem = 9px */
