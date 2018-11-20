@@ -3,23 +3,41 @@
     display: flex;
     flex-wrap: wrap;
     justify-content: space-around;
+    padding-top: 8rem;
 }
 
 .portfolio-item{
     flex-basis: 400px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
+    overflow: hidden;
+   
+    &__link{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
 
     &__title{
+        display: block;
         position: absolute;
+        padding: 3rem;
         color: $color-grey-light;
         font-family: Montserrat;
         text-transform: uppercase;
         font-size: 1.8rem;
+        z-index: 99;
+        border: 2px solid transparent;
+        transition: linear all 0.2s;
     }
 
     &__image{
-        
+        filter: brightness(70%);
+        transition: linear all 0.2s;
     }
+}
+
+.portfolio-item:hover .portfolio-item__title{
+    border: 2px solid $color-primary;
+}
+.portfolio-item:hover .portfolio-item__image{
+    transform: scale(1.1);
 }

@@ -957,9 +957,9 @@ body {
       transition: linear all 0.2s; }
     .site-header__social .slink:hover {
       transform: scale(1.1); }
-    .site-header__social .fa-facebook-square {
+    .site-header__social .fa-caralibro-square {
       color: #3b5998; }
-    .site-header__social .fa-linkedin-in {
+    .site-header__social .fa-linkedinn-in {
       color: #4875B4; }
     .site-header__social .fa-instagram {
       color: #bc2a8d; }
@@ -1003,16 +1003,33 @@ body {
   position: relative;
   display: flex;
   flex-wrap: wrap;
-  justify-content: space-around; }
+  justify-content: space-around;
+  padding-top: 8rem; }
 
 .portfolio-item {
   flex-basis: 400px;
-  display: flex;
-  align-items: center;
-  justify-content: center; }
+  overflow: hidden; }
+  .portfolio-item__link {
+    display: flex;
+    align-items: center;
+    justify-content: center; }
   .portfolio-item__title {
+    display: block;
     position: absolute;
+    padding: 3rem;
     color: #FBFBFB;
     font-family: Montserrat;
     text-transform: uppercase;
-    font-size: 1.8rem; }
+    font-size: 1.8rem;
+    z-index: 99;
+    border: 2px solid transparent;
+    transition: linear all 0.2s; }
+  .portfolio-item__image {
+    filter: brightness(70%);
+    transition: linear all 0.2s; }
+
+.portfolio-item:hover .portfolio-item__title {
+  border: 2px solid #FFDA00; }
+
+.portfolio-item:hover .portfolio-item__image {
+  transform: scale(1.1); }

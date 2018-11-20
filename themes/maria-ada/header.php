@@ -47,10 +47,10 @@
 
             <div class="site-header__social">
                 <a href="" class="slink">
-                    <i class="fab fa-facebook-square"></i>
+                    <i class="fab fa-caralibro-square"></i>
                 </a>
                 <a href="" class="slink">
-                    <i class="fab fa-linkedin-in"></i>
+                    <i class="fab fa-linkedinn-in"></i>
                 </a>
                 <a href="" class="slink">
                     <i class="fab fa-instagram"></i>
