@@ -1,5 +1,5 @@
 .portfolio-container{
-    //border: 1px solid blue;
+    border: 1px solid blue;
     position: relative;
     display: flex;
     flex-wrap: wrap;
@@ -7,7 +7,7 @@
 }
 
 .portfolio-item-wrapper{
-    //border: 1px solid green;
+    border: 1px solid green;
     display: flex;
     min-width: 50%;
     flex-grow: 1;
@@ -16,8 +16,8 @@
 }
 
 .portfolio-item{
-    //border: 1px solid red;
-    width: 46rem;
+    border: 1px solid red;
+    width: 50rem;
     overflow: hidden;
 
     &__link{

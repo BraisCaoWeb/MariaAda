@@ -45,7 +45,7 @@ module.exports = {
     plugins: [
         new BrowserSyncPlugin({
             proxy: settings.urlToPreview,
-            files: ["**/*.php", "**/*.css", "**/*.js"],
+            files: ["**/*.php", "*.php", "**/*.css", "**/*.js"],
             reloadDelay: 0
         })
     ]

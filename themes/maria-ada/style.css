@@ -1000,12 +1000,14 @@ body {
   background-position: center; }
 
 .portfolio-container {
+  border: 1px solid blue;
   position: relative;
   display: flex;
   flex-wrap: wrap;
   padding-top: 8rem; }
 
 .portfolio-item-wrapper {
+  border: 1px solid green;
   display: flex;
   min-width: 50%;
   flex-grow: 1;
@@ -1013,7 +1015,8 @@ body {
   padding: 4rem; }
 
 .portfolio-item {
-  width: 46rem;
+  border: 1px solid red;
+  width: 50rem;
   overflow: hidden; }
   .portfolio-item__link {
     display: flex;
