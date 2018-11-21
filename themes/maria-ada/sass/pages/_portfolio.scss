@@ -7,17 +7,17 @@
 }
 
 .portfolio-item-wrapper{
-   // border: 1px solid green;
+    //border: 1px solid green;
     display: flex;
     min-width: 50%;
     flex-grow: 1;
     justify-content: center;
-    padding: 4rem 0;
+    padding: 4rem;
 }
 
 .portfolio-item{
     //border: 1px solid red;
-    flex-basis: 50rem;
+    width: 46rem;
     overflow: hidden;
 
     &__link{

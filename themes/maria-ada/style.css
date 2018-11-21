@@ -1010,10 +1010,10 @@ body {
   min-width: 50%;
   flex-grow: 1;
   justify-content: center;
-  padding: 4rem 0; }
+  padding: 4rem; }
 
 .portfolio-item {
-  flex-basis: 50rem;
+  width: 46rem;
   overflow: hidden; }
   .portfolio-item__link {
     display: flex;
