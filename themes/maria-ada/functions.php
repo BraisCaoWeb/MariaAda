@@ -116,6 +116,7 @@ function maria_ada_scripts() {
 }
 add_action( 'wp_enqueue_scripts', 'maria_ada_scripts' );
 
+
 /**
  * Implement the Custom Header feature.
  */

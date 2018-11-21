@@ -8,3 +8,8 @@
     src: url(../fonts/Roboto-Regular.ttf);  
     font-weight: normal;  
 }
+@font-face {
+    font-family: ImpactLabel;  
+    src: url(../fonts/ImpactLabel.ttf);  
+    font-weight: normal;  
+}
