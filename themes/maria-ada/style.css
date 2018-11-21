@@ -1003,11 +1003,17 @@ body {
   position: relative;
   display: flex;
   flex-wrap: wrap;
-  justify-content: space-around;
   padding-top: 8rem; }
 
+.portfolio-item-wrapper {
+  display: flex;
+  min-width: 50%;
+  flex-grow: 1;
+  justify-content: center;
+  padding: 4rem 0; }
+
 .portfolio-item {
-  flex-basis: 400px;
+  flex-basis: 50rem;
   overflow: hidden; }
   .portfolio-item__link {
     display: flex;
