@@ -1,19 +1,17 @@
 .trabajo {
     display: flex;
     flex-wrap: wrap;
-    &__image-container {
-      margin: 2px;
-      position: relative;
+    width: 80%;
+
+    &__image{
+      margin: 4rem;
     }
-    &__image {
-      position: absolute;
-      top: 0;
+  
+    &__image-horizontal {
       width: 100%;
     }
-    &::after {
-      content: "";
-      flex-grow: 999999999; /* So images on last row wont stretch entirely, remove on media query*/
-      min-width: 20%; /* To fill the last row space*/
+    &__image-vertical {
+      width: calc(50% - 8rem);
     }
 
     &__title{
