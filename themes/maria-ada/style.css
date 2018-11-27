@@ -998,7 +998,8 @@ body {
   background-size: cover;
   background-position: center;
   display: flex;
-  justify-content: center; }
+  justify-content: center;
+  min-height: 100%; }
 
 .portfolio-container {
   border: 1px solid blue;

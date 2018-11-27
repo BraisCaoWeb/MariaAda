@@ -25,6 +25,7 @@ if ( ! function_exists( 'maria_ada_setup' ) ) :
 		register_nav_menu( 'headerMenuLocation', 'Header Menu Location' );
 		//IMAGE SIZES
 		add_image_size( 'portafolio', 99999, 700, false );
+		add_image_size( 'fullhd', 99999, 1080, false );
 		add_image_size( 'portafolio_miniatura', 600, 300, true );
 
 		/*
