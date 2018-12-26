@@ -359,13 +359,21 @@ textarea {
   font-size: 1rem;
   line-height: 1.5; }
 
-h1, h2, h3, h4, h5, h6 {
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
   clear: both; }
 
 p {
   margin-bottom: 1.5em; }
 
-dfn, cite, em, i {
+dfn,
+cite,
+em,
+i {
   font-style: italic; }
 
 blockquote {
@@ -385,16 +393,21 @@ pre {
   overflow: auto;
   padding: 1.6em; }
 
-code, kbd, tt, var {
+code,
+kbd,
+tt,
+var {
   font-family: Monaco, Consolas, "Andale Mono", "DejaVu Sans Mono", monospace;
   font-size: 15px;
   font-size: 0.9375rem; }
 
-abbr, acronym {
+abbr,
+acronym {
   border-bottom: 1px dotted #666;
   cursor: help; }
 
-mark, ins {
+mark,
+ins {
   background: #fff9c0;
   text-decoration: none; }
 
@@ -423,7 +436,8 @@ hr {
   height: 1px;
   margin-bottom: 1.5em; }
 
-ul, ol {
+ul,
+ol {
   margin: 0 0 1.5em 3em; }
 
 ul {
@@ -472,7 +486,7 @@ input[type="submit"] {
   font-size: 12px;
   font-size: 0.75rem;
   line-height: 1;
-  padding: .6em 1em .4em; }
+  padding: 0.6em 1em 0.4em; }
 
 button:hover,
 input[type="button"]:hover,
@@ -480,7 +494,8 @@ input[type="reset"]:hover,
 input[type="submit"]:hover {
   border-color: #ccc #bbb #aaa; }
 
-button:active, button:focus,
+button:active,
+button:focus,
 input[type="button"]:active,
 input[type="button"]:focus,
 input[type="reset"]:active,
@@ -546,13 +561,16 @@ a {
 a:visited {
   color: purple; }
 
-a:hover, a:focus, a:active {
+a:hover,
+a:focus,
+a:active {
   color: midnightblue; }
 
 a:focus {
   outline: thin dotted; }
 
-a:hover, a:active {
+a:hover,
+a:active {
   outline: 0; }
 
 /*--------------------------------------------------------------
@@ -612,9 +630,9 @@ a:hover, a:active {
   .main-navigation ul {
     display: block; } }
 
-.site-main .comment-navigation, .site-main
-.posts-navigation, .site-main
-.post-navigation {
+.site-main .comment-navigation,
+.site-main .posts-navigation,
+.site-main .post-navigation {
   margin: 0 0 1.5em;
   overflow: hidden; }
 
@@ -737,10 +755,6 @@ a:hover, a:active {
 --------------------------------------------------------------*/
 .sticky {
   display: block; }
-
-.post,
-.page {
-  margin: 0 0 1.5em; }
 
 .updated:not(.published) {
   display: none; }
@@ -932,8 +946,7 @@ body {
   border: 2px solid #dfdfdf;
   width: 100%;
   display: block;
-  transition: all 0.3s;
-  margin-top: 3.5rem; }
+  transition: all 0.3s; }
   .wpcf7-form input:focus,
   .wpcf7-form textarea:focus {
     outline: none;
@@ -958,6 +971,16 @@ body {
   .wpcf7-form input[type="submit"]:active {
     transform: translateY(-0.1rem);
     box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.1); }
+
+.wpcf7-form label {
+  font-family: Montserrat;
+  font-size: 1.2rem; }
+
+.wpcf7-form .wpcf7-validation-errors {
+  border: 2px solid #ffda00;
+  font-family: Montserrat;
+  margin: 0;
+  font-size: 1.3rem; }
 
 .site-header {
   width: 30rem;
@@ -987,7 +1010,7 @@ body {
     font-weight: 300;
     line-height: 1; }
   .site-header__logo {
-    font-size: 2.2rem;
+    font-size: 2.6rem;
     letter-spacing: 1rem; }
   .site-header__logo-sub {
     display: block;
@@ -1133,6 +1156,12 @@ body {
     margin-top: 8rem;
     justify-content: center; }
   .contacto__info {
-    width: 35%; }
+    width: 35%;
+    font-family: Raleway;
+    font-size: 1.6rem;
+    margin-right: 4rem;
+    text-align: right;
+    line-height: 1.5;
+    margin-top: 8rem; }
   .contacto__form {
     width: 65%; }

@@ -10,7 +10,6 @@
         width: 100%;
         display: block;
         transition: all 0.3s;
-        margin-top: 3.5rem;
 
         &:focus {
             outline: none;
@@ -41,5 +40,17 @@
             transform: translateY(-0.1rem);
             box-shadow: 0 0.5rem 1rem rgba(black, 0.1);
         }
+    }
+
+    label {
+        font-family: Montserrat;
+        font-size: 1.2rem;
+    }
+
+    .wpcf7-validation-errors {
+        border: 2px solid $color-primary;
+        font-family: Montserrat;
+        margin: 0;
+        font-size: 1.3rem;
     }
 }

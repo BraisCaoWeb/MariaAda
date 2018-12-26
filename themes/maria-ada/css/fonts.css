@@ -1,15 +1,20 @@
 @font-face {
-    font-family: Montserrat;  
-    src: url(../fonts/Montserrat-Medium.ttf);  
-    font-weight: normal;  
+    font-family: Montserrat;
+    src: url(../fonts/Montserrat-Medium.ttf);
+    font-weight: normal;
 }
 @font-face {
-    font-family: Roboto;  
-    src: url(../fonts/Roboto-Regular.ttf);  
-    font-weight: normal;  
+    font-family: Roboto;
+    src: url(../fonts/Roboto-Regular.ttf);
+    font-weight: normal;
 }
 @font-face {
-    font-family: ImpactLabel;  
-    src: url(../fonts/ImpactLabel.ttf);  
-    font-weight: normal;  
+    font-family: ImpactLabel;
+    src: url(../fonts/ImpactLabel.ttf);
+    font-weight: normal;
+}
+@font-face {
+    font-family: Raleway;
+    src: url(../fonts/Raleway-Regular.ttf);
+    font-weight: normal;
 }
