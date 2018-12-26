@@ -9,6 +9,8 @@
 @import "base/typography";
 
 //COMPONENTS
+@import "components/title";
+@import "components/formulario";
 
 //LAYOUT
 @import "layout/header";
@@ -18,3 +20,4 @@
 @import "pages/portada";
 @import "pages/portfolio";
 @import "pages/trabajo";
+@import "pages/contacto";

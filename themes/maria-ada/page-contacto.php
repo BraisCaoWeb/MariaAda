@@ -1,9 +1,33 @@
 <?php get_header(); ?>
 
 <div class="main-content">
-    <?php
-  echo do_shortcode('[contact-form-7 id="86" title="Contact form 1"]');
-?>
+
+  <section class="contacto">
+    <h2 class="contacto__title section__title">&nbsp;
+      <?php the_title() ?>&nbsp;</h2>
+    <div class="contacto__wrapper">
+      <?php 
+    while (have_posts()) {
+        the_post();?>
+      <div class="contacto__info">
+        <?php echo get_the_content() ?>
+      </div>
+      <div class="contacto__form">
+        <?php
+    echo do_shortcode('[contact-form-7 id="86" title="Contact form 1"]');
+    ?>
+      </div>
+      <?php } ?>
+    </div>
+  </section>
 </div>
+
+<script>
+  var left = Math.floor((Math.random() * 40) + 10);
+  var degrees = Math.floor((Math.random() * (3 - (-3) + 1)) + (-3));
+  var title = document.querySelector('.section__title');
+  title.style.left = left + "%";
+  title.style.transform = 'rotate(' + degrees + 'deg)';
+</script>
 
 <?php get_footer() ?>

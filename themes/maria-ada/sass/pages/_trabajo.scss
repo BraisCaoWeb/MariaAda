@@ -1,5 +1,5 @@
 .trabajo {
-    width: 80%;
+    width: 90%;
     margin-top: 4rem;
 
     &__gallery {
@@ -16,19 +16,5 @@
     }
     &__image-vertical {
         width: calc(50% - 8rem);
-    }
-
-    &__title {
-        display: inline-block;
-        line-height: 1;
-        font-family: ImpactLabel;
-        font-size: 3rem;
-        color: black;
-        font-weight: normal;
-        text-align: center;
-        border: 2px solid $color-primary;
-        padding: 2rem;
-        position: relative;
-        left: 0%;
     }
 }

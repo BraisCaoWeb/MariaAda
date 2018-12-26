@@ -8,8 +8,9 @@
         ?>
 
     <section class="trabajo">
-        <h2 class="trabajo__title">
-            <?php the_title() ?>
+        <h2 class="trabajo__title section__title">
+            &nbsp;
+            <?php the_title() ?>&nbsp;
         </h2>
         <div class="trabajo__gallery">
             <?php 

@@ -1,20 +1,7 @@
 .portfolio {
-    padding-top: 12rem;
-    &__title {
-        padding: 2rem;
-        font-family: ImpactLabel;
-        font-size: 3.5rem;
-        color: black;
-        font-weight: normal;
-        display: inline-block;
-        position: absolute;
-        left: 30%;
-        top: 2%;
-        transform: rotate(-4deg);
-        border: 2px solid $color-primary;
-        z-index: 999;
-        line-height: 1;
-    }
+    width: 90%;
+    margin-top: 4rem;
+
     &__gallery {
         //border: 1px solid blue;
         position: relative;

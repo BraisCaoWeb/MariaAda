@@ -880,7 +880,7 @@ ORDER: Base + Typography > general layout + grid > page layout > components
   box-sizing: inherit; }
 
 a, a:visited {
-  color: #2D2D2D;
+  color: #2d2d2d;
   text-decoration: none; }
 
 ul {
@@ -909,13 +909,63 @@ html {
 body {
   box-sizing: border-box; }
 
+.section__title {
+  display: inline-block;
+  line-height: 1;
+  font-family: ImpactLabel;
+  font-size: 3rem;
+  color: black;
+  font-weight: normal;
+  text-align: center;
+  border: 2px solid #ffda00;
+  padding: 2rem;
+  position: relative;
+  left: 0%; }
+
+.wpcf7-form input,
+.wpcf7-form textarea {
+  font-size: 1.5rem;
+  font-family: Montserrat;
+  padding: 1.5rem 2rem;
+  border-radius: 2px;
+  background-color: #dfdfdf;
+  border: 2px solid #dfdfdf;
+  width: 100%;
+  display: block;
+  transition: all 0.3s;
+  margin-top: 3.5rem; }
+  .wpcf7-form input:focus,
+  .wpcf7-form textarea:focus {
+    outline: none;
+    border: 2px solid #ffda00; }
+    .wpcf7-form input:focus:invalid,
+    .wpcf7-form textarea:focus:invalid {
+      border-bottom: 2px solid red; }
+
+.wpcf7-form input[type="submit"] {
+  background-color: white;
+  border: 2px solid #ffda00;
+  width: 20%;
+  color: #ffda00;
+  text-transform: uppercase;
+  font-weight: bold; }
+  .wpcf7-form input[type="submit"]:hover {
+    transform: translateY(-0.2rem) scale(1.01);
+    cursor: pointer;
+    background-color: #ffda00;
+    color: white;
+    box-shadow: 0 1rem 2rem rgba(0, 0, 0, 0.1); }
+  .wpcf7-form input[type="submit"]:active {
+    transform: translateY(-0.1rem);
+    box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.1); }
+
 .site-header {
   width: 30rem;
   position: fixed;
   left: 0;
   top: 0;
   height: 100vh;
-  background-color: #FBFBFB;
+  background-color: #fbfbfb;
   text-align: center;
   -webkit-box-shadow: 0px 0px 22px 0px #d9d9d9;
   -moz-box-shadow: 0px 0px 22px 0px #d9d9d9;
@@ -954,7 +1004,7 @@ body {
     font-size: 4rem;
     justify-content: space-around;
     align-items: center;
-    border: 2px solid #FFDA00;
+    border: 2px solid #ffda00;
     padding: 0 2rem; }
     .site-header__social .slink {
       transition: linear all 0.2s; }
@@ -992,7 +1042,7 @@ body {
   transition: linear all 0.2s; }
 
 .navigation a:hover {
-  border: 2px solid #FFDA00; }
+  border: 2px solid #ffda00; }
 
 .main-content {
   width: calc(100% - 30rem);
@@ -1004,21 +1054,8 @@ body {
   min-height: 100vh; }
 
 .portfolio {
-  padding-top: 12rem; }
-  .portfolio__title {
-    padding: 2rem;
-    font-family: ImpactLabel;
-    font-size: 3.5rem;
-    color: black;
-    font-weight: normal;
-    display: inline-block;
-    position: absolute;
-    left: 30%;
-    top: 2%;
-    transform: rotate(-4deg);
-    border: 2px solid #FFDA00;
-    z-index: 999;
-    line-height: 1; }
+  width: 90%;
+  margin-top: 4rem; }
   .portfolio__gallery {
     position: relative;
     display: flex;
@@ -1058,7 +1095,7 @@ body {
     display: block;
     position: absolute;
     padding: 3rem;
-    color: #FBFBFB;
+    color: #fbfbfb;
     font-family: Montserrat;
     text-transform: uppercase;
     font-size: 1.8rem;
@@ -1070,13 +1107,13 @@ body {
     transition: linear all 0.2s; }
 
 .portfolio-item:hover .portfolio-item__title {
-  border: 2px solid #FFDA00; }
+  border: 2px solid #ffda00; }
 
 .portfolio-item:hover .portfolio-item__image {
   transform: scale(1.1); }
 
 .trabajo {
-  width: 80%;
+  width: 90%;
   margin-top: 4rem; }
   .trabajo__gallery {
     display: flex;
@@ -1087,15 +1124,15 @@ body {
     width: 100%; }
   .trabajo__image-vertical {
     width: calc(50% - 8rem); }
-  .trabajo__title {
-    display: inline-block;
-    line-height: 1;
-    font-family: ImpactLabel;
-    font-size: 3rem;
-    color: black;
-    font-weight: normal;
-    text-align: center;
-    border: 2px solid #FFDA00;
-    padding: 2rem;
-    position: relative;
-    left: 0%; }
+
+.contacto {
+  width: 90%;
+  margin-top: 4rem; }
+  .contacto__wrapper {
+    display: flex;
+    margin-top: 8rem;
+    justify-content: center; }
+  .contacto__info {
+    width: 35%; }
+  .contacto__form {
+    width: 65%; }

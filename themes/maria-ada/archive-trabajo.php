@@ -1,8 +1,8 @@
 <?php get_header(); ?>
 
 <div class="main-content">
-    <div class="portfolio">
-        <h2 class="portfolio__title">&nbsp;Portafolio&nbsp;</h2>
+    <section class="portfolio">
+        <h2 class="portfolio__title section__title">&nbsp;Portafolio&nbsp;</h2>
         <div class="portfolio__gallery">
 
             <?php 
@@ -28,7 +28,15 @@
     ?>
             <div class="portfolio__relleno"></div>
         </div>
-    </div>
+    </section>
 </div>
+
+<script>
+    var left = Math.floor((Math.random() * 30) + 20);
+    var degrees = Math.floor((Math.random() * (3 - (-3) + 1)) + (-3));
+    var title = document.querySelector('.portfolio__title');
+    title.style.left = left + "%";
+    title.style.transform = 'rotate(' + degrees + 'deg)';
+</script>
 
 <?php get_footer() ?>
