@@ -1,32 +1,67 @@
-.portfolio-container{
-    border: 1px solid blue;
-    position: relative;
-    display: flex;
-    flex-wrap: wrap;
-    padding-top: 8rem;
+.portfolio {
+    padding-top: 12rem;
+    &__title {
+        padding: 2rem;
+        font-family: ImpactLabel;
+        font-size: 3.5rem;
+        color: black;
+        font-weight: normal;
+        display: inline-block;
+        position: absolute;
+        left: 30%;
+        top: 2%;
+        transform: rotate(-4deg);
+        border: 2px solid $color-primary;
+        z-index: 999;
+        line-height: 1;
+    }
+    &__gallery {
+        //border: 1px solid blue;
+        position: relative;
+
+        display: flex;
+        flex-wrap: wrap;
+        align-items: center;
+        justify-content: center;
+        align-content: flex-start;
+    }
+
+    &__relleno {
+        margin: 4rem;
+        width: calc(50% - 8rem);
+        max-width: 600px;
+        min-width: 350px;
+        flex-grow: 1;
+        height: 1rem;
+    }
 }
 
-.portfolio-item-wrapper{
+/* .portfolio-item-wrapper {
     border: 1px solid green;
     display: flex;
     min-width: 50%;
     flex-grow: 1;
     justify-content: center;
+    align-items: center;
     padding: 4rem;
-}
+} */
 
-.portfolio-item{
-    border: 1px solid red;
-    width: 50rem;
+.portfolio-item {
+    margin: 4rem;
+    //border: 1px solid red;
     overflow: hidden;
+    width: calc(50% - 8rem);
+    max-width: 600px;
+    min-width: 350px;
+    flex-grow: 1;
 
-    &__link{
+    &__link {
         display: flex;
         align-items: center;
         justify-content: center;
     }
 
-    &__title{
+    &__title {
         display: block;
         position: absolute;
         padding: 3rem;
@@ -39,15 +74,15 @@
         transition: linear all 0.2s;
     }
 
-    &__image{
+    &__image {
         filter: brightness(70%);
         transition: linear all 0.2s;
     }
 }
 
-.portfolio-item:hover .portfolio-item__title{
+.portfolio-item:hover .portfolio-item__title {
     border: 2px solid $color-primary;
 }
-.portfolio-item:hover .portfolio-item__image{
+.portfolio-item:hover .portfolio-item__image {
     transform: scale(1.1);
 }

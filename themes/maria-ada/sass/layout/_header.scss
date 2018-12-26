@@ -1,13 +1,16 @@
-.site-header{
+.site-header {
     width: 30rem;
     position: fixed;
     left: 0;
     top: 0;
-    height: 100%;
+    height: 100vh;
     background-color: $color-grey-light;
     text-align: center;
+    -webkit-box-shadow: 0px 0px 22px 0px rgba(217, 217, 217, 1);
+    -moz-box-shadow: 0px 0px 22px 0px rgba(217, 217, 217, 1);
+    box-shadow: 0px 0px 22px 0px rgba(217, 217, 217, 1);
 
-    &__container{
+    &__container {
         height: 100%;
         display: flex;
         flex-direction: column;
@@ -15,7 +18,7 @@
         justify-content: center;
     }
 
-    &__logo-wrapper{
+    &__logo-wrapper {
         font-family: Montserrat;
         text-transform: uppercase;
         letter-spacing: 0.4em;
@@ -27,24 +30,24 @@
         line-height: 1;
     }
 
-    &__logo{
+    &__logo {
         font-size: 2.2rem;
         letter-spacing: 1rem;
     }
 
-    &__logo-sub{
+    &__logo-sub {
         display: block;
         text-transform: lowercase;
         font-size: 0.9rem;
         letter-spacing: 0.4em;
     }
 
-    &__menu{
+    &__menu {
         flex-grow: 4;
         width: 100%;
     }
 
-    &__social{
+    &__social {
         display: flex;
         flex-basis: 8rem;
         width: 90%;
@@ -54,33 +57,33 @@
         border: 2px solid $color-primary;
         padding: 0 2rem;
 
-        & .slink{
+        & .slink {
             transition: linear all 0.2s;
         }
 
-        & .slink:hover{
+        & .slink:hover {
             transform: scale(1.1);
         }
 
-        & .fa-caralibro-square{
-            color:#3b5998
+        & .fa-caralibro-square {
+            color: #3b5998;
         }
-        & .fa-linkedinn-in{
-            color:#4875B4;
+        & .fa-linkedinn-in {
+            color: #4875b4;
         }
-        & .fa-instagram{
-            color:#bc2a8d;
+        & .fa-instagram {
+            color: #bc2a8d;
         }
     }
 
-    &__footer{
+    &__footer {
         flex-grow: 1;
         display: flex;
         justify-content: center;
         flex-direction: column;
         font-size: 1.1rem;
         color: $color-grey;
-        & span{
+        & span {
             display: block;
             line-height: 2;
         }

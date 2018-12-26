@@ -15,6 +15,11 @@ if ( ! function_exists( 'maria_ada_setup' ) ) :
 	 * runs before the init hook. The init hook is too late for some features, such
 	 * as indicating support for post thumbnails.
 	 */
+
+	add_filter('max_srcset_image_width', function($max_srcset_image_width, $size_array){
+		return 2560;
+	}, 10, 2);
+
 	function maria_ada_setup() {
 
 		load_theme_textdomain( 'maria-ada', get_template_directory() . '/languages' );
@@ -25,8 +30,9 @@ if ( ! function_exists( 'maria_ada_setup' ) ) :
 		register_nav_menu( 'headerMenuLocation', 'Header Menu Location' );
 		//IMAGE SIZES
 		add_image_size( 'portafolio', 99999, 700, false );
-		add_image_size( 'fullhd', 99999, 1080, false );
 		add_image_size( 'portafolio_miniatura', 600, 300, true );
+		add_image_size( 'fullhd', 99999, 1080, false );
+		add_image_size( '2k', 99999, 1440, false );
 
 		/*
 		 * Switch default core markup for search form, comment form, and comments
@@ -144,4 +150,3 @@ require get_template_directory() . '/inc/customizer.php';
 if ( defined( 'JETPACK__VERSION' ) ) {
 	require get_template_directory() . '/inc/jetpack.php';
 }
-
