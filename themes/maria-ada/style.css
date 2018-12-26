@@ -995,7 +995,6 @@ body {
   border: 2px solid #FFDA00; }
 
 .main-content {
-  position: absolute;
   width: calc(100% - 30rem);
   margin-left: 30rem;
   background-size: cover;
