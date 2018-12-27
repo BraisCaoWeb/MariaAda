@@ -22,12 +22,4 @@
   </section>
 </div>
 
-<script>
-  var left = Math.floor((Math.random() * 40) + 10);
-  var degrees = Math.floor((Math.random() * (3 - (-3) + 1)) + (-3));
-  var title = document.querySelector('.section__title');
-  title.style.left = left + "%";
-  title.style.transform = 'rotate(' + degrees + 'deg)';
-</script>
-
 <?php get_footer() ?>

@@ -8,6 +8,7 @@
         ?>
 
     <section class="trabajo">
+        <a href="<?php echo get_post_type_archive_link( 'trabajo') ?>" class="trabajo__volver fa fa-arrow-left"></a>
         <h2 class="trabajo__title section__title">
             &nbsp;
             <?php the_title() ?>&nbsp;
@@ -27,25 +28,12 @@
             <?php } else { ?>
             <img class="trabajo__image trabajo__image-horizontal" src="<?php echo esc_attr($imageURL)?>" srcset="<?php echo esc_attr( $img_srcset );?>"
                 sizes="60vw" alt="">
-            <?php } ?>
-
-
-
-
-            <?php 
+            <?php } 
 	    }
     }
 ?>
         </div>
     </section>
 </div>
-
-<script>
-    var left = Math.floor((Math.random() * 40) + 10);
-    var degrees = Math.floor((Math.random() * (3 - (-3) + 1)) + (-3));
-    var title = document.querySelector('.trabajo__title');
-    title.style.left = left + "%";
-    title.style.transform = 'rotate(' + degrees + 'deg)';
-</script>
 
 <?php get_footer() ?>

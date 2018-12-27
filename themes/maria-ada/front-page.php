@@ -5,10 +5,15 @@
     while (have_posts()) {
         the_post();?>
 
-   
+
     <?php   
     }
 ?>
 </div>
+
+<script>
+    var header = document.querySelector('.site-header');
+    header.style.boxShadow = 'none';
+</script>
 
 <?php get_footer() ?>

@@ -17,4 +17,13 @@
     &__image-vertical {
         width: calc(50% - 8rem);
     }
+    &__volver {
+        font-size: 3rem;
+        transition: 0.3s linear;
+    }
+    &__volver:hover {
+        transform: scale(1.1);
+        color: $color-primary;
+        text-shadow: 0 1rem 2rem rgba(black, 0.2);
+    }
 }

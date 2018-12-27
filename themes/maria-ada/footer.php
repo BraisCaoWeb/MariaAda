@@ -9,10 +9,11 @@
  * @package Maria_Ada
  */
 ?>
-	</div><!-- #content -->
+</div><!-- #content -->
 </div><!-- #page -->
 
 <?php wp_footer(); ?>
 
 </body>
+
 </html>

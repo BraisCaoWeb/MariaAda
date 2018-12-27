@@ -9,38 +9,23 @@
         display: flex;
         flex-wrap: wrap;
         align-items: center;
-        justify-content: center;
         align-content: flex-start;
-    }
-
-    &__relleno {
-        margin: 4rem;
-        width: calc(50% - 8rem);
-        max-width: 600px;
-        min-width: 350px;
-        flex-grow: 1;
-        height: 1rem;
     }
 }
 
 /* .portfolio-item-wrapper {
-    border: 1px solid green;
     display: flex;
-    min-width: 50%;
-    flex-grow: 1;
+    width: calc(50% - 8rem);
     justify-content: center;
     align-items: center;
-    padding: 4rem;
+    margin: 4rem;
 } */
 
 .portfolio-item {
-    margin: 4rem;
     //border: 1px solid red;
+    margin: 4rem;
     overflow: hidden;
     width: calc(50% - 8rem);
-    max-width: 600px;
-    min-width: 350px;
-    flex-grow: 1;
 
     &__link {
         display: flex;
@@ -64,6 +49,7 @@
     &__image {
         filter: brightness(70%);
         transition: linear all 0.2s;
+        width: 100%;
     }
 }
 
