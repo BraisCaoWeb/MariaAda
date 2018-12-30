@@ -10,6 +10,7 @@
         flex-wrap: wrap;
         align-items: center;
         align-content: flex-start;
+        justify-content: space-between;
     }
 }
 
@@ -25,7 +26,8 @@
     //border: 1px solid red;
     margin: 4rem;
     overflow: hidden;
-    width: calc(50% - 8rem);
+    min-width: calc(50% - 8rem);
+    flex-basis: 300px;
 
     &__link {
         display: flex;
@@ -49,7 +51,7 @@
     &__image {
         filter: brightness(70%);
         transition: linear all 0.2s;
-        width: 100%;
+        flex-grow: 1;
     }
 }
 

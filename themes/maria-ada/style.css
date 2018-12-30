@@ -919,7 +919,7 @@ html {
   @media (min-width: 112.5em) {
     html {
       /* width more than 1800px? => 1rem = 12px */
-      font-size: 75%; } }
+      font-size: 65%; } }
 
 body {
   box-sizing: border-box; }
@@ -1077,22 +1077,22 @@ body {
     position: relative;
     /*         border: 2px solid transparent;
         transition: linear all 0.2s; */ }
-  .navigation a svg,
-  .navigation a svg rect {
+  .navigation a .svg-menu,
+  .navigation a .svg-menu .borde {
     position: absolute;
     top: 0;
     left: 0;
     width: 100%;
     height: 100%;
     fill: transparent; }
-  .navigation a svg rect {
+  .navigation a .svg-menu .borde {
     stroke: #ffda00;
     stroke-width: 4;
     transition: 1s ease;
     stroke-dasharray: 800;
     stroke-dashoffset: 800; }
-  .navigation a:hover svg rect,
-  .navigation a:focus svg rect {
+  .navigation a:hover .svg-menu .borde,
+  .navigation a:focus .svg-menu .borde {
     stroke-dashoffset: 0; }
   .navigation .current_page_item,
   .navigation .current-menu-item {
@@ -1116,7 +1116,8 @@ body {
     display: flex;
     flex-wrap: wrap;
     align-items: center;
-    align-content: flex-start; }
+    align-content: flex-start;
+    justify-content: space-between; }
 
 /* .portfolio-item-wrapper {
     display: flex;
@@ -1128,7 +1129,8 @@ body {
 .portfolio-item {
   margin: 4rem;
   overflow: hidden;
-  width: calc(50% - 8rem); }
+  min-width: calc(50% - 8rem);
+  flex-basis: 300px; }
   .portfolio-item__link {
     display: flex;
     align-items: center;
@@ -1147,7 +1149,7 @@ body {
   .portfolio-item__image {
     filter: brightness(70%);
     transition: linear all 0.2s;
-    width: 100%; }
+    flex-grow: 1; }
 
 .portfolio-item:hover .portfolio-item__title {
   border: 2px solid #ffda00; }
@@ -1192,3 +1194,34 @@ body {
     margin-top: 8rem; }
   .contacto__form {
     width: 65%; }
+
+.sobre-mi {
+  width: 50%;
+  margin-top: 4rem; }
+  .sobre-mi__wrapper {
+    display: flex;
+    justify-content: center; }
+  .sobre-mi__description {
+    margin-top: 8rem;
+    border: 2px solid #ffda00;
+    margin-left: 4rem; }
+
+.description__miniature {
+  float: left;
+  width: 20rem;
+  height: 20rem;
+  position: relative;
+  top: -5rem;
+  left: -5rem; }
+
+.description__img {
+  width: 100%; }
+
+.description__text {
+  font-size: 1.6rem;
+  font-family: Raleway;
+  position: relative;
+  top: -3rem;
+  left: -3rem;
+  padding-left: 8rem;
+  padding-top: 8rem; }

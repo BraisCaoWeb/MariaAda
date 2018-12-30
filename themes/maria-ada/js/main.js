@@ -4,7 +4,7 @@ function addSVG() {
     items.forEach(function(element) {
         element.insertAdjacentHTML(
             "beforeend",
-            '<svg><rect class="borde" width="100%" height="100%"></rect></svg>'
+            '<svg class="svg-menu"><rect class="borde" width="100%" height="100%"></rect></svg>'
         );
     });
 }

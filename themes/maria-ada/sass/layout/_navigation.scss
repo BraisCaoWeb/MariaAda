@@ -16,8 +16,8 @@
         transition: linear all 0.2s; */
     }
 
-    & a svg,
-    & a svg rect {
+    & a .svg-menu,
+    & a .svg-menu .borde {
         position: absolute;
         top: 0;
         left: 0;
@@ -26,7 +26,7 @@
         fill: transparent;
     }
 
-    & a svg rect {
+    & a .svg-menu .borde {
         stroke: $color-primary;
         stroke-width: 4;
         transition: 1s ease;
@@ -34,8 +34,8 @@
         stroke-dashoffset: 800;
     }
 
-    & a:hover svg rect,
-    a:focus svg rect {
+    & a:hover .svg-menu .borde,
+    a:focus .svg-menu .borde {
         stroke-dashoffset: 0;
     }
 

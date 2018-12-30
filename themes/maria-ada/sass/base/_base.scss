@@ -37,7 +37,7 @@ html {
 
     @include respond(big-desktop) {
         /* width more than 1800px? => 1rem = 12px */
-        font-size: 75%;
+        font-size: 65%;
     }
 }
 

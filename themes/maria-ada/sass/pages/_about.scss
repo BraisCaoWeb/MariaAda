@@ -1,0 +1,39 @@
+.sobre-mi {
+    width: 50%;
+    margin-top: 4rem;
+
+    &__wrapper {
+        display: flex;
+        justify-content: center;
+    }
+
+    &__description {
+        margin-top: 8rem;
+        border: 2px solid $color-primary;
+        margin-left: 4rem;
+    }
+}
+
+.description__miniature {
+    float: left;
+    width: 20rem;
+    height: 20rem;
+    position: relative;
+    top: -5rem;
+    left: -5rem;
+}
+
+.description__img {
+    width: 100%;
+}
+
+.description__text {
+    font-size: 1.6rem;
+    font-family: Raleway;
+    position: relative;
+    top: -3rem;
+    left: -3rem;
+    padding-left: 8rem;
+
+    padding-top: 8rem;
+}
