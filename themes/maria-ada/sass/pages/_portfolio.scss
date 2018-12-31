@@ -1,5 +1,5 @@
 .portfolio {
-    width: 70%;
+    width: 75%;
     margin-top: 4rem;
 
     &__gallery {
@@ -27,7 +27,12 @@
     margin: 4rem;
     overflow: hidden;
     min-width: calc(50% - 8rem);
-    flex-basis: 300px;
+    flex-basis: 250px;
+
+    @include respond(tab-land) {
+        /* width less than 1200px? (75em*16px = 1200px) => 1rem = 9px */
+        flex-basis: 100%;
+    }
 
     &__link {
         display: flex;

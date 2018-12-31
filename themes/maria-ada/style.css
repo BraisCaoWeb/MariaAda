@@ -959,7 +959,7 @@ body {
 .wpcf7-form input[type="submit"] {
   background-color: white;
   border: 2px solid #ffda00;
-  width: 20%;
+  width: 15rem;
   color: black;
   text-transform: uppercase;
   font-weight: bold; }
@@ -1060,6 +1060,80 @@ body {
       display: block;
       line-height: 2; }
 
+.mobile-toggle {
+  background-color: #ffda00;
+  width: 100%;
+  z-index: 99999;
+  position: fixed;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  display: none;
+  visibility: hidden; }
+  @media (max-width: 56.25em) {
+    .mobile-toggle {
+      /* width less than 900px? => 1rem = 8px */
+      display: flex;
+      visibility: visible; } }
+  .mobile-toggle__logo-wrapper {
+    font-family: Montserrat;
+    text-transform: uppercase;
+    letter-spacing: 0.4em;
+    text-align: center;
+    display: flex;
+    align-items: center;
+    font-weight: 300;
+    line-height: 1;
+    color: #2d2d2d;
+    margin: 4rem; }
+    .mobile-toggle__logo-wrapper a,
+    .mobile-toggle__logo-wrapper a:visited {
+      color: #2d2d2d; }
+  .mobile-toggle__logo {
+    font-size: 2.6rem;
+    letter-spacing: 1rem; }
+    .mobile-toggle__logo a {
+      width: 100%; }
+  .mobile-toggle__logo-sub {
+    display: block;
+    text-transform: lowercase;
+    font-size: 0.9rem;
+    letter-spacing: 0.4em; }
+
+.hamburger-menu {
+  padding: 1rem;
+  margin-right: 3rem;
+  cursor: pointer; }
+  .hamburger-menu .menu-item {
+    background-color: white;
+    display: block;
+    height: 3px;
+    margin: 0 0 10px;
+    transition: all 0.3s ease-in-out;
+    width: 40px; }
+    .hamburger-menu .menu-item:nth-child(3) {
+      margin: 0; }
+  .hamburger-menu.open .menu-item {
+    margin: 0px 0px 5px;
+    background-color: white;
+    width: 40px; }
+    .hamburger-menu.open .menu-item:first-child {
+      transform: rotate(45deg);
+      transform-origin: 8.5px; }
+    .hamburger-menu.open .menu-item:nth-child(2) {
+      opacity: 0; }
+    .hamburger-menu.open .menu-item:nth-child(3) {
+      transform: rotate(-45deg);
+      transform-origin: 8.5px; }
+
+@media (max-width: 56.25em) {
+  .site-header {
+    /* width less than 900px? => 1rem = 8px */
+    transform: translate(-100%, 0);
+    transition: all 0.4s linear;
+    z-index: 99;
+    box-shadow: none; } }
+
 .navigation {
   /* & a:hover {
         border: 2px solid $color-primary;
@@ -1107,9 +1181,15 @@ body {
   display: flex;
   justify-content: center;
   min-height: 100vh; }
+  @media (max-width: 56.25em) {
+    .main-content {
+      /* width less than 900px? => 1rem = 8px */
+      width: 100%;
+      margin-left: 0;
+      padding-top: 10rem; } }
 
 .portfolio {
-  width: 70%;
+  width: 75%;
   margin-top: 4rem; }
   .portfolio__gallery {
     position: relative;
@@ -1130,7 +1210,11 @@ body {
   margin: 4rem;
   overflow: hidden;
   min-width: calc(50% - 8rem);
-  flex-basis: 300px; }
+  flex-basis: 250px; }
+  @media (max-width: 75em) {
+    .portfolio-item {
+      /* width less than 1200px? (75em*16px = 1200px) => 1rem = 9px */
+      flex-basis: 100%; } }
   .portfolio-item__link {
     display: flex;
     align-items: center;
@@ -1158,7 +1242,7 @@ body {
   transform: scale(1.1); }
 
 .trabajo {
-  width: 70%;
+  width: 75%;
   margin-top: 4rem; }
   .trabajo__gallery {
     display: flex;
@@ -1178,12 +1262,16 @@ body {
     text-shadow: 0 1rem 2rem rgba(0, 0, 0, 0.2); }
 
 .contacto {
-  width: 70%;
+  width: 75%;
   margin-top: 4rem; }
   .contacto__wrapper {
     display: flex;
     margin-top: 8rem;
     justify-content: center; }
+    @media (max-width: 56.25em) {
+      .contacto__wrapper {
+        /* width less than 900px? => 1rem = 8px */
+        flex-wrap: wrap; } }
   .contacto__info {
     width: 35%;
     font-family: Raleway;
@@ -1192,11 +1280,19 @@ body {
     text-align: right;
     line-height: 1.5;
     margin-top: 8rem; }
-  .contacto__form {
-    width: 65%; }
+    @media (max-width: 56.25em) {
+      .contacto__info {
+        /* width less than 900px? => 1rem = 8px */
+        width: 100%;
+        margin-top: 0;
+        margin-bottom: 4rem; } }
+  @media (max-width: 56.25em) {
+    .contacto__form {
+      /* width less than 900px? => 1rem = 8px */
+      width: 100%; } }
 
 .sobre-mi {
-  width: 70%;
+  width: 75%;
   margin-top: 4rem; }
   .sobre-mi__wrapper {
     display: flex;

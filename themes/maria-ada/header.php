@@ -64,3 +64,20 @@
             </div>
         </div>
     </header><!-- #masthead -->
+    <div class="mobile-toggle">
+        <div class="mobile-toggle__logo-wrapper">
+            <div class="mobile-toggle__logo">
+                <a href="<?php echo site_url()?>">
+                    <?php bloginfo('name') ?>
+                </a>
+                <span class="mobile-toggle__logo-sub">
+                    <?php bloginfo('description') ?>
+                </span>
+            </div>
+        </div>
+        <div class="hamburger-menu">
+            <span class="menu-item"></span>
+            <span class="menu-item"></span>
+            <span class="menu-item"></span>
+        </div>
+    </div>

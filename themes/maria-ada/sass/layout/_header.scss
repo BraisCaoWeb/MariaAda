@@ -102,3 +102,99 @@
         }
     }
 }
+
+//MOBILE
+
+.mobile-toggle {
+    background-color: $color-primary;
+    width: 100%;
+    z-index: 99999;
+    position: fixed;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    display: none;
+    visibility: hidden;
+    @include respond(tab-port) {
+        /* width less than 900px? => 1rem = 8px */
+        display: flex;
+        visibility: visible;
+    }
+
+    &__logo-wrapper {
+        font-family: Montserrat;
+        text-transform: uppercase;
+        letter-spacing: 0.4em;
+        text-align: center;
+        display: flex;
+        align-items: center;
+        font-weight: 300;
+        line-height: 1;
+        color: $color-grey-dark;
+        margin: 4rem;
+
+        a,
+        a:visited {
+            color: $color-grey-dark;
+        }
+    }
+
+    &__logo {
+        font-size: 2.6rem;
+        letter-spacing: 1rem;
+        a {
+            width: 100%;
+        }
+    }
+
+    &__logo-sub {
+        display: block;
+        text-transform: lowercase;
+        font-size: 0.9rem;
+        letter-spacing: 0.4em;
+    }
+}
+
+.hamburger-menu {
+    padding: 1rem;
+    margin-right: 3rem;
+    cursor: pointer;
+    & .menu-item {
+        background-color: white;
+        display: block;
+        height: 3px;
+        margin: 0 0 10px;
+        transition: all 0.3s ease-in-out;
+        width: 40px;
+        &:nth-child(3) {
+            margin: 0;
+        }
+    }
+
+    &.open .menu-item {
+        margin: 0px 0px 5px;
+        background-color: white;
+        width: 40px;
+        &:first-child {
+            transform: rotate(45deg);
+            transform-origin: 8.5px;
+        }
+        &:nth-child(2) {
+            opacity: 0;
+        }
+        &:nth-child(3) {
+            transform: rotate(-45deg);
+            transform-origin: 8.5px;
+        }
+    }
+}
+
+.site-header {
+    @include respond(tab-port) {
+        /* width less than 900px? => 1rem = 8px */
+        transform: translate(-100%, 0);
+        transition: all 0.4s linear;
+        z-index: 99;
+        box-shadow: none;
+    }
+}

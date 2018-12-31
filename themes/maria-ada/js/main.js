@@ -19,3 +19,44 @@ if (title != null) {
 }
 
 addSVG();
+
+//MOBILE NAV
+function closeMenu() {
+    document.querySelector(".site-header").style.transform =
+        "translate(-100%, 0)";
+    document.querySelector(".hamburger-menu").classList.toggle("open");
+}
+
+function openMenu() {
+    document.querySelector(".site-header").style.transform = "translate(0%, 0)";
+    document.querySelector(".hamburger-menu").classList.toggle("open");
+}
+
+document.addEventListener("DOMContentLoaded", function() {
+    var menu = "close";
+    document
+        .querySelector(".hamburger-menu")
+        .addEventListener("click", function() {
+            if (menu === "close") {
+                menu = "open";
+                openMenu();
+            } else {
+                menu = "close";
+                closeMenu();
+            }
+        });
+    document.addEventListener("scroll", function() {
+        if (menu === "open") {
+            menu = "close";
+            closeMenu();
+        }
+    });
+    document.querySelectorAll("section").forEach(element => {
+        element.addEventListener("click", function() {
+            if (menu === "open") {
+                menu = "close";
+                closeMenu();
+            }
+        });
+    });
+});
