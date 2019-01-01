@@ -460,7 +460,6 @@ dd {
 img {
   height: auto;
   /* Make sure images are scaled correctly. */
-  max-width: 100%;
   /* Adhere to container width. */ }
 
 figure {
@@ -1009,6 +1008,10 @@ body {
     font-weight: 300;
     line-height: 1;
     color: #2d2d2d; }
+    @media (max-width: 56.25em) {
+      .site-header__logo-wrapper {
+        /* width less than 900px? => 1rem = 8px */
+        visibility: hidden; } }
     .site-header__logo-wrapper a,
     .site-header__logo-wrapper a:visited {
       color: #2d2d2d; }
@@ -1185,8 +1188,20 @@ body {
     .main-content {
       /* width less than 900px? => 1rem = 8px */
       width: 100%;
-      margin-left: 0;
-      padding-top: 10rem; } }
+      margin-left: 0rem;
+      position: relative;
+      overflow: hidden; } }
+
+.imagen-portada {
+  display: none; }
+  @media (max-width: 56.25em) {
+    .imagen-portada {
+      /* width less than 900px? => 1rem = 8px */
+      display: initial;
+      height: 100%;
+      position: absolute;
+      left: 50%;
+      transform: translateX(-50%); } }
 
 .portfolio {
   width: 75%;
