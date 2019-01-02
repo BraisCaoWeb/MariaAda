@@ -141,6 +141,11 @@
         a:visited {
             color: $color-grey-dark;
         }
+
+        @include respond(phone) {
+            /* width less than 600px? => 1rem = 8px */
+            margin: 3rem;
+        }
     }
 
     &__logo {
@@ -149,6 +154,10 @@
         a {
             width: 100%;
         }
+        @include respond(phone) {
+            /* width less than 600px? => 1rem = 8px */
+            font-size: 2rem;
+        }
     }
 
     &__logo-sub {
@@ -156,6 +165,10 @@
         text-transform: lowercase;
         font-size: 0.9rem;
         letter-spacing: 0.4em;
+        @include respond(phone) {
+            /* width less than 600px? => 1rem = 8px */
+            font-size: 0.7rem;
+        }
     }
 }
 

@@ -15,6 +15,11 @@
         position: relative;
         overflow: hidden;
     }
+
+    @include respond(phone) {
+        /* width less than 600px? => 1rem = 8px */
+        padding-top: 8rem;
+    }
 }
 
 .imagen-portada {

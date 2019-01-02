@@ -1096,16 +1096,28 @@ body {
     .mobile-toggle__logo-wrapper a,
     .mobile-toggle__logo-wrapper a:visited {
       color: #2d2d2d; }
+    @media (max-width: 37.5em) {
+      .mobile-toggle__logo-wrapper {
+        /* width less than 600px? => 1rem = 8px */
+        margin: 3rem; } }
   .mobile-toggle__logo {
     font-size: 2.6rem;
     letter-spacing: 1rem; }
     .mobile-toggle__logo a {
       width: 100%; }
+    @media (max-width: 37.5em) {
+      .mobile-toggle__logo {
+        /* width less than 600px? => 1rem = 8px */
+        font-size: 2rem; } }
   .mobile-toggle__logo-sub {
     display: block;
     text-transform: lowercase;
     font-size: 0.9rem;
     letter-spacing: 0.4em; }
+    @media (max-width: 37.5em) {
+      .mobile-toggle__logo-sub {
+        /* width less than 600px? => 1rem = 8px */
+        font-size: 0.7rem; } }
 
 .hamburger-menu {
   padding: 1rem;
@@ -1196,6 +1208,10 @@ body {
       margin-left: 0rem;
       position: relative;
       overflow: hidden; } }
+  @media (max-width: 37.5em) {
+    .main-content {
+      /* width less than 600px? => 1rem = 8px */
+      padding-top: 8rem; } }
 
 .imagen-portada {
   display: none; }
