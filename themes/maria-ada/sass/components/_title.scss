@@ -10,4 +10,9 @@
     padding: 2rem;
     position: relative;
     left: 0%;
+
+    @include respond(tab-port) {
+        /* width less than 900px? => 1rem = 8px */
+        font-size: 2.5rem;
+    }
 }

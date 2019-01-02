@@ -32,6 +32,7 @@
     @include respond(tab-land) {
         /* width less than 1200px? (75em*16px = 1200px) => 1rem = 9px */
         flex-basis: 100%;
+        margin: 2rem;
     }
 
     &__link {
@@ -51,6 +52,12 @@
         z-index: 99;
         border: 2px solid transparent;
         transition: linear all 0.2s;
+
+        @include respond(tab-land) {
+            /* width less than 1200px? (75em*16px = 1200px) => 1rem = 9px */
+            border: 2px solid $color-primary;
+            padding: 1rem;
+        }
     }
 
     &__image {

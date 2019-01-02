@@ -10,7 +10,7 @@ function addSVG() {
 }
 
 //Posicion aleatorio de los títulos de las secciones
-var left = Math.floor(Math.random() * 30 + 10);
+var left = Math.floor(Math.random() * 20);
 var degrees = Math.floor(Math.random() * (3 - -3 + 1) + -3);
 var title = document.querySelector(".section__title");
 if (title != null) {

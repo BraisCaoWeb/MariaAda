@@ -935,6 +935,10 @@ body {
   padding: 2rem;
   position: relative;
   left: 0%; }
+  @media (max-width: 56.25em) {
+    .section__title {
+      /* width less than 900px? => 1rem = 8px */
+      font-size: 2.5rem; } }
 
 .wpcf7-form input,
 .wpcf7-form textarea {
@@ -1187,6 +1191,7 @@ body {
   @media (max-width: 56.25em) {
     .main-content {
       /* width less than 900px? => 1rem = 8px */
+      padding-top: 10rem;
       width: 100%;
       margin-left: 0rem;
       position: relative;
@@ -1229,7 +1234,8 @@ body {
   @media (max-width: 75em) {
     .portfolio-item {
       /* width less than 1200px? (75em*16px = 1200px) => 1rem = 9px */
-      flex-basis: 100%; } }
+      flex-basis: 100%;
+      margin: 2rem; } }
   .portfolio-item__link {
     display: flex;
     align-items: center;
@@ -1245,6 +1251,11 @@ body {
     z-index: 99;
     border: 2px solid transparent;
     transition: linear all 0.2s; }
+    @media (max-width: 75em) {
+      .portfolio-item__title {
+        /* width less than 1200px? (75em*16px = 1200px) => 1rem = 9px */
+        border: 2px solid #ffda00;
+        padding: 1rem; } }
   .portfolio-item__image {
     filter: brightness(70%);
     transition: linear all 0.2s;
@@ -1258,19 +1269,31 @@ body {
 
 .trabajo {
   width: 75%;
-  margin-top: 4rem; }
+  margin-top: 4rem;
+  position: relative; }
   .trabajo__gallery {
     display: flex;
-    flex-wrap: wrap; }
+    flex-wrap: wrap;
+    align-items: flex-start; }
   .trabajo__image {
     margin: 4rem; }
+    @media (max-width: 56.25em) {
+      .trabajo__image {
+        /* width less than 900px? => 1rem = 8px */
+        margin: 2rem; } }
   .trabajo__image-horizontal {
     width: 100%; }
   .trabajo__image-vertical {
     width: calc(50% - 8rem); }
+    @media (max-width: 56.25em) {
+      .trabajo__image-vertical {
+        /* width less than 900px? => 1rem = 8px */
+        width: calc(50% - 4rem); } }
   .trabajo__volver {
     font-size: 3rem;
-    transition: 0.3s linear; }
+    transition: 0.3s linear;
+    position: absolute;
+    left: -4rem; }
   .trabajo__volver:hover {
     transform: scale(1.1);
     color: #ffda00;

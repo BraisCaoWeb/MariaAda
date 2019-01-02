@@ -9,6 +9,7 @@
 
     @include respond(tab-port) {
         /* width less than 900px? => 1rem = 8px */
+        padding-top: 10rem;
         width: 100%;
         margin-left: 0rem;
         position: relative;

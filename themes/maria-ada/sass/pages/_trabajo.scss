@@ -1,14 +1,20 @@
 .trabajo {
     width: 75%;
     margin-top: 4rem;
+    position: relative;
 
     &__gallery {
         display: flex;
         flex-wrap: wrap;
+        align-items: flex-start;
     }
 
     &__image {
         margin: 4rem;
+        @include respond(tab-port) {
+            /* width less than 900px? => 1rem = 8px */
+            margin: 2rem;
+        }
     }
 
     &__image-horizontal {
@@ -16,10 +22,16 @@
     }
     &__image-vertical {
         width: calc(50% - 8rem);
+        @include respond(tab-port) {
+            /* width less than 900px? => 1rem = 8px */
+            width: calc(50% - 4rem);
+        }
     }
     &__volver {
         font-size: 3rem;
         transition: 0.3s linear;
+        position: absolute;
+        left: -4rem;
     }
     &__volver:hover {
         transform: scale(1.1);
