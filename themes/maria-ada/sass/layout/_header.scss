@@ -211,7 +211,7 @@
         /* width less than 900px? => 1rem = 8px */
         transform: translate(-100%, 0);
         transition: all 0.4s linear;
-        z-index: 99;
+        z-index: 100;
         box-shadow: none;
     }
 }

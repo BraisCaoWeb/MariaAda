@@ -51,7 +51,7 @@ document.addEventListener("DOMContentLoaded", function() {
             closeMenu();
         }
     });
-    document.querySelectorAll("section").forEach(element => {
+    document.querySelectorAll(".main-content").forEach(element => {
         element.addEventListener("click", function() {
             if (menu === "open") {
                 menu = "close";
