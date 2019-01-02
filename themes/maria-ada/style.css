@@ -1275,7 +1275,8 @@ body {
   .portfolio-item__image {
     filter: brightness(70%);
     transition: linear all 0.2s;
-    flex-grow: 1; }
+    flex-grow: 1;
+    max-width: 100%; }
 
 .portfolio-item:hover .portfolio-item__title {
   border: 2px solid #ffda00; }

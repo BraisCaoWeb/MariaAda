@@ -64,6 +64,7 @@
         filter: brightness(70%);
         transition: linear all 0.2s;
         flex-grow: 1;
+        max-width: 100%;
     }
 }
 
