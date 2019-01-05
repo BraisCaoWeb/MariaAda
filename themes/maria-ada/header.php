@@ -47,10 +47,10 @@
 
 
             <div class="site-header__social">
-                <a href="" class="slink">
-                    <i class="fab fa-caralibro-square"></i>
+                <a href="https://www.pinterest.es/mariaadavazquez/" class="slink">
+                    <i class="fab fa-pinterest"></i>
                 </a>
-                <a href="" class="slink">
+                <a href="https://es.linkedin.com/in/mariaadavazquez" class="slink">
                     <i class="fab fa-linkedinn-in"></i>
                 </a>
                 <a href="" class="slink">

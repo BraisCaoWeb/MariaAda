@@ -1049,8 +1049,8 @@ body {
     .site-header__social .slink:hover,
     .site-header__social .slink:focus {
       transform: scale(1.1); }
-    .site-header__social .fa-caralibro-square {
-      color: #3b5998; }
+    .site-header__social .fa-pinterest {
+      color: #c8232c; }
     .site-header__social .fa-linkedinn-in {
       color: #4875b4; }
     .site-header__social .fa-instagram {
@@ -1349,6 +1349,10 @@ body {
 .sobre-mi {
   width: 75%;
   margin-top: 4rem; }
+  @media (max-width: 37.5em) {
+    .sobre-mi {
+      /* width less than 600px? => 1rem = 8px */
+      width: 80%; } }
   .sobre-mi__wrapper {
     display: flex;
     justify-content: center; }
@@ -1364,6 +1368,13 @@ body {
   position: relative;
   top: -5rem;
   left: -5rem; }
+  @media (max-width: 37.5em) {
+    .description__miniature {
+      /* width less than 600px? => 1rem = 8px */
+      width: 17rem;
+      height: 17rem;
+      top: -4rem;
+      left: -4rem; } }
 
 .description__img {
   width: 100%; }
@@ -1375,4 +1386,7 @@ body {
   top: -3rem;
   left: -3rem;
   padding-left: 8rem;
-  padding-top: 8rem; }
+  padding-right: 2rem;
+  padding-top: 6rem;
+  text-align: justify;
+  text-justify: inter-word; }

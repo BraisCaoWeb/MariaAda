@@ -1,6 +1,10 @@
 .sobre-mi {
     width: 75%;
     margin-top: 4rem;
+    @include respond(phone) {
+        /* width less than 600px? => 1rem = 8px */
+        width: 80%;
+    }
 
     &__wrapper {
         display: flex;
@@ -21,6 +25,14 @@
     position: relative;
     top: -5rem;
     left: -5rem;
+
+    @include respond(phone) {
+        /* width less than 600px? => 1rem = 8px */
+        width: 17rem;
+        height: 17rem;
+        top: -4rem;
+        left: -4rem;
+    }
 }
 
 .description__img {
@@ -34,6 +46,9 @@
     top: -3rem;
     left: -3rem;
     padding-left: 8rem;
+    padding-right: 2rem;
 
-    padding-top: 8rem;
+    padding-top: 6rem;
+    text-align: justify;
+    text-justify: inter-word;
 }
