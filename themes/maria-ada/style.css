@@ -903,7 +903,7 @@ ul {
 html {
   /* 1rem = 10px => 10px/16px = 0.625 */
   font-size: 62.5%; }
-  @media (max-width: 75em) {
+  @media (max-width: 81.25em) {
     html {
       /* width less than 1200px? (75em*16px = 1200px) => 1rem = 9px */
       font-size: 56.25%; } }
@@ -1243,11 +1243,11 @@ body {
     margin: 4rem;
 } */
 .portfolio-item {
-  margin: 4rem;
+  margin: 4%;
   overflow: hidden;
-  min-width: calc(50% - 8rem);
+  min-width: calc(50% - 8%);
   flex-basis: 250px; }
-  @media (max-width: 75em) {
+  @media (max-width: 81.25em) {
     .portfolio-item {
       /* width less than 1200px? (75em*16px = 1200px) => 1rem = 9px */
       flex-basis: 100%;
@@ -1267,7 +1267,7 @@ body {
     z-index: 99;
     border: 2px solid transparent;
     transition: linear all 0.2s; }
-    @media (max-width: 75em) {
+    @media (max-width: 81.25em) {
       .portfolio-item__title {
         /* width less than 1200px? (75em*16px = 1200px) => 1rem = 9px */
         border: 2px solid #ffda00;
@@ -1298,14 +1298,21 @@ body {
       .trabajo__image {
         /* width less than 900px? => 1rem = 8px */
         margin: 2rem; } }
+    .trabajo__image img {
+      width: 100%; }
   .trabajo__image-horizontal {
     width: 100%; }
   .trabajo__image-vertical {
+    flex-grow: 1;
     width: calc(50% - 8rem); }
     @media (max-width: 56.25em) {
       .trabajo__image-vertical {
         /* width less than 900px? => 1rem = 8px */
         width: calc(50% - 4rem); } }
+  .trabajo__texto {
+    margin: 0 4rem;
+    font-size: 1.4rem;
+    font-family: Raleway; }
   .trabajo__volver {
     font-size: 3rem;
     transition: 0.3s linear;
@@ -1322,29 +1329,22 @@ body {
   .contacto__wrapper {
     display: flex;
     margin-top: 8rem;
-    justify-content: center; }
+    justify-content: center;
+    flex-wrap: wrap; }
     @media (max-width: 56.25em) {
       .contacto__wrapper {
-        /* width less than 900px? => 1rem = 8px */
-        flex-wrap: wrap; } }
+        /* width less than 900px? => 1rem = 8px */ } }
   .contacto__info {
-    width: 35%;
+    width: 100%;
     font-family: Raleway;
     font-size: 1.6rem;
     margin-right: 4rem;
-    text-align: right;
+    text-align: left;
     line-height: 1.5;
-    margin-top: 8rem; }
-    @media (max-width: 56.25em) {
-      .contacto__info {
-        /* width less than 900px? => 1rem = 8px */
-        width: 100%;
-        margin-top: 0;
-        margin-bottom: 4rem; } }
-  @media (max-width: 56.25em) {
-    .contacto__form {
-      /* width less than 900px? => 1rem = 8px */
-      width: 100%; } }
+    margin-top: 0;
+    margin-bottom: 4rem; }
+  .contacto__form {
+    width: 100%; }
 
 .sobre-mi {
   width: 75%;

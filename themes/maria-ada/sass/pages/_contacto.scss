@@ -6,33 +6,24 @@
         display: flex;
         margin-top: 8rem;
         justify-content: center;
+        flex-wrap: wrap;
         @include respond(tab-port) {
             /* width less than 900px? => 1rem = 8px */
-            flex-wrap: wrap;
         }
     }
 
     &__info {
-        width: 35%;
+        width: 100%;
         font-family: Raleway;
         font-size: 1.6rem;
         margin-right: 4rem;
-        text-align: right;
+        text-align: left;
         line-height: 1.5;
-        margin-top: 8rem;
-
-        @include respond(tab-port) {
-            /* width less than 900px? => 1rem = 8px */
-            width: 100%;
-            margin-top: 0;
-            margin-bottom: 4rem;
-        }
+        margin-top: 0;
+        margin-bottom: 4rem;
     }
 
     &__form {
-        @include respond(tab-port) {
-            /* width less than 900px? => 1rem = 8px */
-            width: 100%;
-        }
+        width: 100%;
     }
 }
