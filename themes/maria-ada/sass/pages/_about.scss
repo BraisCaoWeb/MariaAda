@@ -73,7 +73,18 @@
 
     width: 50%;
     margin: 2rem;
-    margin-top: 18rem;
+    //margin-top: 18rem;
+
+    &:before {
+        content: "";
+        width: 6rem;
+        height: 19rem;
+        float: right;
+
+        @include respond(tab-land) {
+            float: none;
+        }
+    }
 
     @include respond(tab-land) {
         margin-bottom: 2rem;
@@ -94,7 +105,18 @@
 
     width: 50%;
     margin: 2rem;
-    margin-top: 18rem;
+    //margin-top: 18rem;
+
+    &:before {
+        content: "";
+        width: 6rem;
+        height: 19rem;
+        float: left;
+
+        @include respond(tab-land) {
+            float: none;
+        }
+    }
 
     @include respond(tab-land) {
         width: 100%;

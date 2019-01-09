@@ -1407,8 +1407,15 @@ body {
   text-align: justify;
   text-justify: inter-word;
   width: 50%;
-  margin: 2rem;
-  margin-top: 18rem; }
+  margin: 2rem; }
+  .description__text:before {
+    content: "";
+    width: 6rem;
+    height: 19rem;
+    float: right; }
+    @media (max-width: 81.25em) {
+      .description__text:before {
+        float: none; } }
   @media (max-width: 81.25em) {
     .description__text {
       margin-bottom: 2rem;
@@ -1425,8 +1432,15 @@ body {
   text-align: justify;
   text-justify: inter-word;
   width: 50%;
-  margin: 2rem;
-  margin-top: 18rem; }
+  margin: 2rem; }
+  .description__cv:before {
+    content: "";
+    width: 6rem;
+    height: 19rem;
+    float: left; }
+    @media (max-width: 81.25em) {
+      .description__cv:before {
+        float: none; } }
   @media (max-width: 81.25em) {
     .description__cv {
       width: 100%;
