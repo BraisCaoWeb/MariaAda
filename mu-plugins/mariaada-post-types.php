@@ -33,4 +33,4 @@ function mariaada_post_types(){
  
 add_action( 'init', 'mariaada_post_types' );
 
-?> 
+?>

@@ -119,7 +119,7 @@
     justify-content: space-between;
     display: none;
     visibility: hidden;
-    @include respond(tab-port) {
+    @include respond(tab-land) {
         /* width less than 900px? => 1rem = 8px */
         display: flex;
         visibility: visible;
@@ -207,7 +207,7 @@
 }
 
 .site-header {
-    @include respond(tab-port) {
+    @include respond(tab-land) {
         /* width less than 900px? => 1rem = 8px */
         transform: translate(-100%, 0);
         transition: all 0.4s linear;

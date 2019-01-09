@@ -1,10 +1,6 @@
 .sobre-mi {
+    width: 75%;
     margin-top: 4rem;
-    @include respond(tab-land) {
-        /* width less than 1300px? => 1rem = 8px */
-        width: 75%;
-        margin-top: 4rem;
-    }
     @include respond(phone) {
         /* width less than 600px? => 1rem = 8px */
         width: 80%;
@@ -16,34 +12,18 @@
     }
 
     &__description {
-        display: flex;
-        position: relative;
-        margin-top: 4rem;
-        @include respond(tab-land) {
-            display: initial;
-            margin-top: 8rem;
-        }
+        margin-top: 8rem;
     }
 }
 
 .description__miniature {
+    float: left;
     width: 20rem;
     height: 20rem;
-    position: absolute;
-    left: 50%;
-    transform: translateX(-50%);
+    position: relative;
+    top: -2rem;
+    left: -2rem;
     z-index: 9;
-
-    @include respond(tab-land) {
-        float: left;
-        width: 20rem;
-        height: 20rem;
-        position: relative;
-        top: -2rem;
-        left: -2rem;
-
-        transform: translateX(0);
-    }
 
     @include respond(phone) {
         /* width less than 600px? => 1rem = 8px */
@@ -62,6 +42,7 @@
     font-size: 1.6rem;
     font-family: Raleway;
     position: relative;
+    margin-bottom: 2rem;
 
     padding-left: 6rem;
     padding-right: 6rem;
@@ -70,16 +51,6 @@
     padding-top: 2rem;
     text-align: justify;
     text-justify: inter-word;
-
-    width: 50%;
-    margin: 2rem;
-    margin-top: 18rem;
-
-    @include respond(tab-land) {
-        margin-bottom: 2rem;
-        width: 100%;
-        margin-top: 2rem;
-    }
 }
 
 .description__cv {
@@ -91,13 +62,4 @@
     padding-top: 2rem;
     text-align: justify;
     text-justify: inter-word;
-
-    width: 50%;
-    margin: 2rem;
-    margin-top: 18rem;
-
-    @include respond(tab-land) {
-        width: 100%;
-        margin-top: 2rem;
-    }
 }
