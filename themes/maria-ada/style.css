@@ -1247,7 +1247,7 @@ body {
   overflow: hidden;
   min-width: calc(50% - 8%);
   flex-basis: 250px; }
-  @media (max-width: 81.25em) {
+  @media (max-width: 56.25em) {
     .portfolio-item {
       /* width less than 1200px? (75em*16px = 1200px) => 1rem = 9px */
       flex-basis: 100%;
@@ -1336,23 +1336,22 @@ body {
         /* width less than 900px? => 1rem = 8px */ } }
   .contacto__info {
     width: 100%;
+    max-width: 82rem;
     font-family: Raleway;
     font-size: 1.6rem;
-    margin-right: 4rem;
-    text-align: left;
     line-height: 1.5;
-    margin-top: 0;
     margin-bottom: 4rem; }
   .contacto__form {
-    width: 100%; }
+    width: 100%;
+    max-width: 82rem; }
 
 .sobre-mi {
-  margin-top: 4rem; }
+  margin-top: 4rem;
+  width: 90%; }
   @media (max-width: 81.25em) {
     .sobre-mi {
-      /* width less than 1300px? => 1rem = 8px */
-      width: 75%;
-      margin-top: 4rem; } }
+      /* width less than 600px? => 1rem = 8px */
+      width: 75%; } }
   @media (max-width: 37.5em) {
     .sobre-mi {
       /* width less than 600px? => 1rem = 8px */

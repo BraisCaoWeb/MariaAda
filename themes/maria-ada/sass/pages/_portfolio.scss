@@ -29,7 +29,7 @@
     min-width: calc(50% - 8%);
     flex-basis: 250px;
 
-    @include respond(tab-land) {
+    @include respond(tab-port) {
         /* width less than 1200px? (75em*16px = 1200px) => 1rem = 9px */
         flex-basis: 100%;
         margin: 2rem;
