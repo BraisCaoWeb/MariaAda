@@ -962,10 +962,11 @@ body {
 .wpcf7-form input[type="submit"] {
   background-color: white;
   border: 2px solid #ffda00;
-  width: 15rem;
+  width: 20rem;
   color: black;
   text-transform: uppercase;
-  font-weight: bold; }
+  font-weight: bold;
+  display: inline-block; }
   .wpcf7-form input[type="submit"]:hover {
     transform: translateY(-0.2rem) scale(1.01);
     cursor: pointer;
@@ -980,11 +981,17 @@ body {
   font-family: Montserrat;
   font-size: 1.2rem; }
 
+.wpcf7-form .wpcf7-mail-sent-ok,
 .wpcf7-form .wpcf7-validation-errors {
-  border: 2px solid #ffda00;
   font-family: Montserrat;
   margin: 0;
   font-size: 1.3rem; }
+
+.wpcf7-form .wpcf7-mail-sent-ok {
+  border: 2px solid green; }
+
+.wpcf7-form .wpcf7-validation-errors {
+  border: 2px solid red; }
 
 .site-header {
   width: 30rem;
@@ -1056,11 +1063,12 @@ body {
     .site-header__social .fa-instagram {
       color: #bc2a8d; }
   .site-header__footer {
-    flex-grow: 1;
+    flex-grow: 0;
+    margin: 1rem;
     display: flex;
     justify-content: center;
     flex-direction: column;
-    font-size: 1.1rem;
+    font-size: 1rem;
     color: #828282;
     font-family: Raleway; }
     .site-header__footer span {
@@ -1291,7 +1299,8 @@ body {
   .trabajo__gallery {
     display: flex;
     flex-wrap: wrap;
-    align-items: flex-start; }
+    align-items: flex-start;
+    justify-content: center; }
   .trabajo__image {
     margin: 4rem; }
     @media (max-width: 56.25em) {
@@ -1303,16 +1312,23 @@ body {
   .trabajo__image-horizontal {
     width: 100%; }
   .trabajo__image-vertical {
-    flex-grow: 1;
     width: calc(50% - 8rem); }
     @media (max-width: 56.25em) {
       .trabajo__image-vertical {
         /* width less than 900px? => 1rem = 8px */
         width: calc(50% - 4rem); } }
   .trabajo__texto {
+    flex-basis: 100%;
     margin: 0 4rem;
     font-size: 1.4rem;
     font-family: Raleway; }
+  .trabajo__derechos {
+    flex-basis: 100%;
+    margin: 2rem;
+    text-align: center;
+    margin-top: 0;
+    font-family: Raleway;
+    font-size: 1.2rem; }
   .trabajo__volver {
     font-size: 3rem;
     transition: 0.3s linear;

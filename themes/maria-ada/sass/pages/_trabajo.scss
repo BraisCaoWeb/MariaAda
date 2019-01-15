@@ -7,6 +7,7 @@
         display: flex;
         flex-wrap: wrap;
         align-items: flex-start;
+        justify-content: center;
     }
 
     &__image {
@@ -15,7 +16,6 @@
             /* width less than 900px? => 1rem = 8px */
             margin: 2rem;
         }
-
         img {
             width: 100%;
         }
@@ -25,7 +25,7 @@
         width: 100%;
     }
     &__image-vertical {
-        flex-grow: 1;
+        //flex-grow: 1;
         width: calc(50% - 8rem);
         @include respond(tab-port) {
             /* width less than 900px? => 1rem = 8px */
@@ -34,9 +34,19 @@
     }
 
     &__texto {
+        flex-basis: 100%;
         margin: 0 4rem;
         font-size: 1.4rem;
         font-family: Raleway;
+    }
+
+    &__derechos {
+        flex-basis: 100%;
+        margin: 2rem;
+        text-align: center;
+        margin-top: 0;
+        font-family: Raleway;
+        font-size: 1.2rem;
     }
     &__volver {
         font-size: 3rem;

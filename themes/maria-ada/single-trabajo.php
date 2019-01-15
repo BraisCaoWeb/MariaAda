@@ -1,3 +1,6 @@
+/*
+Template Name: Trabajo
+*/
 <?php get_header(); ?>
 
 <div class="main-content">
@@ -40,11 +43,15 @@
             if ($i == 1) { ?>
             <div class="trabajo__texto">
                 <p>
-                    <?php the_excerpt() ?>
+                    <?php echo get_field('descripcion') ?>
                 </p>
             </div>
             <?php }
-	    }
+        } ?>
+            <div class="trabajo__derechos">
+                <?php the_excerpt(); ?>
+            </div>
+            <?php
     }
 ?>
         </div>

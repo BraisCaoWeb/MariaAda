@@ -31,6 +31,7 @@ if ( ! function_exists( 'maria_ada_setup' ) ) :
 		//IMAGE SIZES
 		add_image_size( 'portafolio', 99999, 700, false );
 		add_image_size( 'portafolio_miniatura', 600, 300, true );
+		add_image_size( 'cuadrada_perfil', 500, 500, true );
 		add_image_size( 'fullhd', 99999, 1080, false );
 		add_image_size( '2k', 99999, 1440, false );
 

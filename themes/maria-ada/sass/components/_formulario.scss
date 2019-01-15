@@ -23,10 +23,11 @@
     input[type="submit"] {
         background-color: white;
         border: 2px solid $color-primary;
-        width: 15rem;
+        width: 20rem;
         color: black;
         text-transform: uppercase;
         font-weight: bold;
+        display: inline-block;
 
         &:hover {
             transform: translateY(-0.2rem) scale(1.01);
@@ -47,10 +48,17 @@
         font-size: 1.2rem;
     }
 
+    .wpcf7-mail-sent-ok,
     .wpcf7-validation-errors {
-        border: 2px solid $color-primary;
         font-family: Montserrat;
         margin: 0;
         font-size: 1.3rem;
+    }
+    .wpcf7-mail-sent-ok {
+        border: 2px solid green;
+    }
+
+    .wpcf7-validation-errors {
+        border: 2px solid red;
     }
 }
