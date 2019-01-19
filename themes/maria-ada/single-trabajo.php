@@ -48,13 +48,18 @@ Template Name: Trabajo
             </div>
             <?php }
         } ?>
+
+            <?php if (get_field('video_trabajo') != "") { ?>
             <div class="trabajo__video">
                 <?php echo get_field('video_trabajo'); ?>
             </div>
+            <?php } ?>
+
+            <?php if (the_excerpt() != "") { ?>
             <div class="trabajo__derechos">
                 <?php the_excerpt(); ?>
             </div>
-            <?php
+            <?php } 
     }
 ?>
         </div>
