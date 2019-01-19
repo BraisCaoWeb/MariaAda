@@ -44,7 +44,11 @@
                     ?>
                 </nav>
             </div>
-
+            <div class="site-header__languages">
+                <ul>
+                    <?php pll_the_languages();?>
+                </ul>
+            </div>
 
             <div class="site-header__social">
                 <a href="https://www.pinterest.es/mariaadavazquez/" class="slink">
