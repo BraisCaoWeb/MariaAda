@@ -48,6 +48,11 @@
         font-family: Raleway;
         font-size: 1.2rem;
     }
+
+    &__video {
+        margin: 4rem;
+        flex-basis: 100%;
+    }
     &__volver {
         font-size: 3rem;
         transition: 0.3s linear;

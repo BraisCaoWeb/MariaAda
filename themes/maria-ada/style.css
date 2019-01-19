@@ -1329,6 +1329,9 @@ body {
     margin-top: 0;
     font-family: Raleway;
     font-size: 1.2rem; }
+  .trabajo__video {
+    margin: 4rem;
+    flex-basis: 100%; }
   .trabajo__volver {
     font-size: 3rem;
     transition: 0.3s linear;
