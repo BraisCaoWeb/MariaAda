@@ -55,7 +55,7 @@ Template Name: Trabajo
             </div>
             <?php } ?>
 
-            <?php if (the_excerpt() != "") { ?>
+            <?php if (get_the_excerpt() != "") { ?>
             <div class="trabajo__derechos">
                 <?php the_excerpt(); ?>
             </div>
