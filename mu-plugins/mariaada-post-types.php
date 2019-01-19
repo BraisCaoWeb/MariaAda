@@ -27,7 +27,7 @@ function mariaada_post_types(){
             'all_items' => 'Todos los Trabajos',
             'singular_name' => 'Trabajo'
         ),
-        'menu_icon' => 'dashicons-hammer'
+        'menu_icon' => 'dashicons-format-gallery'
     ));
 }
  
