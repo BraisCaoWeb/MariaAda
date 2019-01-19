@@ -1,6 +1,5 @@
-/*
-Template Name: Trabajo
-*/
+<!-- Template Name: Trabajo -->
+
 <?php get_header(); ?>
 
 <div class="main-content">
@@ -28,14 +27,24 @@ Template Name: Trabajo
 
             ?>
 
-            <?php if ((wp_get_attachment_image_src($imageID, 'fullhd')[1] >= wp_get_attachment_image_src($imageID, 'fullhd')[2]) OR get_field('anchura', $imageID) == 100){ ?>
+            <?php if (get_field('anchura', $imageID) == 100){ ?>
             <div class="trabajo__image trabajo__image-horizontal">
                 <img src="<?php echo esc_attr($imageURL)?>" srcset="<?php echo esc_attr( $img_srcset );?>" sizes="60vw"
                     alt="">
             </div>
-            <?php } else if ((wp_get_attachment_image_src($imageID, 'fullhd')[1] < wp_get_attachment_image_src($imageID, 'fullhd')[2]) OR get_field('anchura', $imageID) == 50) { ?>
+            <?php } else if (get_field('anchura', $imageID) == 50) { ?>
+            <div class="trabajo__image trabajo__image-mitad">
+                <img src="<?php echo esc_attr($imageURL)?>" srcset="<?php echo esc_attr( $img_srcset );?>" sizes="50vw"
+                    alt="">
+            </div>
+            <?php } else if ((wp_get_attachment_image_src($imageID, 'fullhd')[1] < wp_get_attachment_image_src($imageID, 'fullhd')[2])) { ?>
             <div class="trabajo__image trabajo__image-vertical">
-                <img src="<?php echo esc_attr($imageURL)?>" srcset="<?php echo esc_attr( $img_srcset );?>" sizes="33vw"
+                <img src="<?php echo esc_attr($imageURL)?>" srcset="<?php echo esc_attr( $img_srcset );?>" sizes="50vw"
+                    alt="">
+            </div>
+            <?php }  else if ((wp_get_attachment_image_src($imageID, 'fullhd')[1] >= wp_get_attachment_image_src($imageID, 'fullhd')[2])) { ?>
+            <div class="trabajo__image trabajo__image-horizontal">
+                <img src="<?php echo esc_attr($imageURL)?>" srcset="<?php echo esc_attr( $img_srcset );?>" sizes="60vw"
                     alt="">
             </div>
             <?php } 
@@ -48,10 +57,18 @@ Template Name: Trabajo
             </div>
             <?php }
         } ?>
+
+            <?php if (get_field('video_trabajo') != "") { ?>
+            <div class="trabajo__video">
+                <?php echo get_field('video_trabajo'); ?>
+            </div>
+            <?php } ?>
+
+            <?php if (get_the_excerpt() != "") { ?>
             <div class="trabajo__derechos">
                 <?php the_excerpt(); ?>
             </div>
-            <?php
+            <?php } 
     }
 ?>
         </div>
