@@ -1,4 +1,4 @@
-<!-- Template Name: Trabajo -->
+<?php  /* Template Name: Trabajo  */ ?>
 
 <?php get_header(); ?>
 

@@ -1,6 +1,5 @@
-/*
-Template Name: Contacto
-*/
+<!-- Template Name: Contacto -->
+
 <?php get_header(); ?>
 
 <div class="main-content">

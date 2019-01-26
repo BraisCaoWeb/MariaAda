@@ -1,6 +1,4 @@
-/*
-Template Name: Sobre Mi
-*/
+<!-- Template Name: Sobre Mi -->
 <?php get_header(); ?>
 
 <div class="main-content">

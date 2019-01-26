@@ -1473,3 +1473,57 @@ body {
     .description__cv {
       width: 100%;
       margin-top: 2rem; } }
+
+/* Position the image container (needed to position the left and right arrows) */
+.sketchbook {
+  width: 75%;
+  margin-top: 4rem; }
+  .sketchbook__slider {
+    margin-top: 4rem;
+    width: 100%;
+    position: relative;
+    display: flex; }
+  .sketchbook__slide {
+    flex-basis: 50%;
+    display: none;
+    transition: 1s;
+    -webkit-animation-name: fade;
+    -webkit-animation-duration: 1.5s;
+    animation-name: fade;
+    animation-duration: 1.5s; }
+  .sketchbook__image {
+    width: 100%; }
+
+/* Next & previous buttons */
+.sketchbook__prev,
+.sketchbook__next {
+  cursor: pointer;
+  position: absolute;
+  top: 50%;
+  width: auto;
+  padding: 16px;
+  margin-top: -50px;
+  color: #2d2d2d;
+  font-weight: bold;
+  font-size: 4rem;
+  border-radius: 0 3px 3px 0;
+  user-select: none;
+  -webkit-user-select: none;
+  transition: all 0.5s; }
+
+/* Position the "next button" to the right */
+.sketchbook__next {
+  right: 0;
+  border-radius: 3px 0 0 3px; }
+
+/* On hover, add a black background color with a little bit see-through */
+.sketchbook__prev:hover,
+.sketchbook__next:hover {
+  color: #ffda00;
+  background-color: rgba(0, 0, 0, 0.8); }
+
+@keyframes fade {
+  from {
+    opacity: 0.2; }
+  to {
+    opacity: 1; } }
