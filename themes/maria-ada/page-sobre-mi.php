@@ -1,6 +1,5 @@
-/*
-Template Name: Sobre Mi
-*/
+<?php /* Template Name: Sobre Mi */ ?>
+
 <?php get_header(); ?>
 
 <div class="main-content">
@@ -26,6 +25,10 @@ Template Name: Sobre Mi
                         <?php echo get_field('curriculum') ?>
                     </p>
                 </div>
+            </div>
+
+            <div class="sobre-mi__descarga">
+                <?php echo get_field('descarga_cv'); ?>
             </div>
         </div>
         <?php } ?>

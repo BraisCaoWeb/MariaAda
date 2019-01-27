@@ -13,6 +13,7 @@
     &__wrapper {
         display: flex;
         justify-content: center;
+        flex-direction: column;
     }
 
     &__description {
@@ -22,6 +23,37 @@
         @include respond(tab-land) {
             display: initial;
             margin-top: 8rem;
+        }
+    }
+
+    &__descarga {
+        text-align: center;
+        font-size: 1.8rem;
+        margin-top: 1rem;
+        margin-bottom: 4rem;
+
+        p {
+            display: inline;
+
+            a {
+                border: 2px solid $color-primary;
+                padding: 1.3rem;
+                font-family: Montserrat;
+                transition: all 0.3s;
+
+                &:hover {
+                    transform: translateY(-0.2rem) scale(1.01);
+                    cursor: pointer;
+                    background-color: $color-primary;
+                    color: white;
+                    box-shadow: 0 1rem 2rem rgba(black, 0.1);
+                }
+
+                &:active {
+                    transform: translateY(-0.1rem);
+                    box-shadow: 0 0.5rem 1rem rgba(black, 0.1);
+                }
+            }
         }
     }
 }
@@ -58,7 +90,8 @@
     width: 100%;
 }
 
-.description__text {
+.description__text,
+.description__cv {
     font-size: 1.6rem;
     font-family: Raleway;
     position: relative;
@@ -68,13 +101,24 @@
     border: 2px solid $color-primary;
 
     padding-top: 2rem;
+    padding-bottom: 2rem;
     text-align: justify;
     text-justify: inter-word;
 
     width: 50%;
     margin: 2rem;
+    margin-left: 0;
+    margin-right: 0;
     //margin-top: 18rem;
 
+    @include respond(tab-land) {
+        width: 100%;
+        margin-top: 2rem;
+    }
+}
+
+.description__text {
+    margin-right: 2rem;
     &:before {
         content: "";
         width: 6rem;
@@ -85,28 +129,9 @@
             float: none;
         }
     }
-
-    @include respond(tab-land) {
-        margin-bottom: 2rem;
-        width: 100%;
-        margin-top: 2rem;
-    }
 }
 
 .description__cv {
-    font-size: 1.6rem;
-    font-family: Raleway;
-    padding-left: 6rem;
-    padding-right: 6rem;
-    border: 2px solid $color-primary;
-    padding-top: 2rem;
-    text-align: justify;
-    text-justify: inter-word;
-
-    width: 50%;
-    margin: 2rem;
-    //margin-top: 18rem;
-
     &:before {
         content: "";
         width: 6rem;
@@ -116,10 +141,5 @@
         @include respond(tab-land) {
             float: none;
         }
-    }
-
-    @include respond(tab-land) {
-        width: 100%;
-        margin-top: 2rem;
     }
 }
