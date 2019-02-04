@@ -9,7 +9,7 @@ body:after {
     position: absolute;
     top: 0;
     left: 0;
-    z-index: 9999;
+    z-index: 100000;
     background-color: black;
     filter: progid:DXImageTransform.Microsoft.Alpha(Opacity=80);
     opacity: 0.8;
@@ -20,7 +20,7 @@ body:after {
     position: absolute;
     left: 0;
     width: 100%;
-    z-index: 100000;
+    z-index: 100001;
     text-align: center;
     line-height: 0;
     font-weight: normal;
@@ -121,6 +121,12 @@ body:after {
     transition: opacity 0.6s;
 }
 
+@media (max-width: 56.25em) {
+    .lb-nav a.lb-prev {
+        opacity: 0.7;
+    }
+}
+
 .lb-nav a.lb-prev:hover {
     filter: progid:DXImageTransform.Microsoft.Alpha(Opacity=100);
     opacity: 0.7;
@@ -137,6 +143,12 @@ body:after {
     -moz-transition: opacity 0.6s;
     -o-transition: opacity 0.6s;
     transition: opacity 0.6s;
+}
+
+@media (max-width: 56.25em) {
+    .lb-nav a.lb-next {
+        opacity: 0.7;
+    }
 }
 
 .lb-nav a.lb-next:hover {
@@ -193,9 +205,10 @@ body:after {
 .lb-data .lb-close {
     display: block;
     float: right;
-    width: 30px;
-    height: 30px;
-    background: url(../images/close.png) top right no-repeat;
+    width: 25px;
+    height: 25px;
+    background: url(../images/close.png);
+    background-size: cover;
     text-align: right;
     outline: none;
     filter: progid:DXImageTransform.Microsoft.Alpha(Opacity=70);
@@ -210,4 +223,12 @@ body:after {
     cursor: pointer;
     filter: progid:DXImageTransform.Microsoft.Alpha(Opacity=100);
     opacity: 1;
+}
+
+@media (max-width: 56.25em) {
+    .lb-data .lb-close {
+        width: 20px;
+        height: 20px;
+        opacity: 1;
+    }
 }
