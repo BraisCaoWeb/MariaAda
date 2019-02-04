@@ -81,6 +81,7 @@ body:after {
     height: 32px;
     margin: 0 auto;
     background: url(../images/loading.gif) no-repeat;
+    background-size: cover;
 }
 
 .lb-nav {
