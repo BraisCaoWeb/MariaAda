@@ -30,23 +30,31 @@
 
             <?php if (get_field('anchura', $imageID) == 100){ ?>
             <div class="trabajo__image trabajo__image-horizontal">
-                <img src="<?php echo esc_attr($imageURL)?>" srcset="<?php echo esc_attr( $img_srcset );?>" sizes="60vw"
-                    alt="">
+                <a href="<?php echo esc_attr($imageURL)?>" data-lightbox="<?php the_title() ?>">
+                    <img src="<?php echo esc_attr($imageURL)?>" srcset="<?php echo esc_attr( $img_srcset );?>" sizes="60vw"
+                        alt="">
+                </a>
             </div>
             <?php } else if (get_field('anchura', $imageID) == 50) { ?>
             <div class="trabajo__image trabajo__image-mitad">
-                <img src="<?php echo esc_attr($imageURL)?>" srcset="<?php echo esc_attr( $img_srcset );?>" sizes="50vw"
-                    alt="">
+                <a href="<?php echo esc_attr($imageURL)?>" data-lightbox="<?php the_title() ?>">
+                    <img src="<?php echo esc_attr($imageURL)?>" srcset="<?php echo esc_attr( $img_srcset );?>" sizes="50vw"
+                        alt="">
+                </a>
             </div>
             <?php } else if ((wp_get_attachment_image_src($imageID, 'fullhd')[1] < wp_get_attachment_image_src($imageID, 'fullhd')[2])) { ?>
             <div class="trabajo__image trabajo__image-vertical">
-                <img src="<?php echo esc_attr($imageURL)?>" srcset="<?php echo esc_attr( $img_srcset );?>" sizes="50vw"
-                    alt="">
+                <a href="<?php echo esc_attr($imageURL)?>" data-lightbox="<?php the_title() ?>">
+                    <img src="<?php echo esc_attr($imageURL)?>" srcset="<?php echo esc_attr( $img_srcset );?>" sizes="50vw"
+                        alt="">
+                </a>
             </div>
             <?php }  else if ((wp_get_attachment_image_src($imageID, 'fullhd')[1] >= wp_get_attachment_image_src($imageID, 'fullhd')[2])) { ?>
             <div class="trabajo__image trabajo__image-horizontal">
-                <img src="<?php echo esc_attr($imageURL)?>" srcset="<?php echo esc_attr( $img_srcset );?>" sizes="60vw"
-                    alt="">
+                <a href="<?php echo esc_attr($imageURL)?>" data-lightbox="<?php the_title() ?>">
+                    <img src="<?php echo esc_attr($imageURL)?>" srcset="<?php echo esc_attr( $img_srcset );?>" sizes="60vw"
+                        alt="">
+                </a>
             </div>
             <?php } 
 

@@ -111,10 +111,13 @@ function maria_ada_scripts() {
 	wp_enqueue_style( 'maria-ada-style', get_stylesheet_uri() );
 	wp_enqueue_style( 'fonts', get_template_directory_uri() . '/css/fonts.css' );
 	wp_enqueue_style( 'font-awesome', get_template_directory_uri() . '/css/all.css' );
+	wp_enqueue_style( 'lightbox-css', get_template_directory_uri() . '/css/lightbox.css' );
 
 	wp_enqueue_script( 'maria-ada-navigation', get_template_directory_uri() . '/js/navigation.js', array(), '20151215', true );
 	
 	wp_enqueue_script( 'maria-ada-scripts-main', get_template_directory_uri() . '/js/main.min.js', array(), false, true);
+	
+	wp_enqueue_script( 'maria-ada-lightbox', get_template_directory_uri() . '/js/lightbox.js', array('jquery'), false, true);
 
 	wp_enqueue_script( 'maria-ada-skip-link-focus-fix', get_template_directory_uri() . '/js/skip-link-focus-fix.js', array(), '20151215', true );
 
