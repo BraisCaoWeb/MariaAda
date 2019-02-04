@@ -16,7 +16,8 @@
             <?php the_title() ?>&nbsp;
         </h2>
         <div class="sketchbook__slider">
-            <?php 
+            <ul id="lightSlider">
+                <?php 
             
         foreach( $gallery as $image_url ) {
             $originalImageUrl = substr($image_url, 0, -12) . '.jpg';//Conseguir la URL de la imagen original a partir de la thumbnail 'str_replace('-150x150', '', $image_url);'
@@ -25,19 +26,22 @@
             $img_srcset = wp_get_attachment_image_srcset( $imageID, 'full' );
             ?>
 
-            <div class="sketchbook__slide">
-                <img src="<?php echo esc_attr($imageURL)?>" class="sketchbook__image" srcset="<?php echo esc_attr( $img_srcset );?>"
-                    sizes="60vw" alt="">
-            </div>
-            <?php } 
+                <li class="sketchbook__slide">
+                    <img src="<?php echo esc_attr($imageURL)?>" class="sketchbook__image" srcset="<?php echo esc_attr( $img_srcset );?>"
+                        sizes="60vw" alt="">
+                </li>
+                <?php } 
         }
         ?>
-            <a class="sketchbook__prev">&#10094;</a>
-            <a class="sketchbook__next">&#10095;</a>
+            </ul>
         </div>
     </section>
 </div>
-<script>
-
+<script type="text/javascript">
+    jQuery(function ($) {
+        $(document).ready(function () {
+            $("#lightSlider").lightSlider();
+        });
+    });
 </script>
 <?php get_footer() ?>

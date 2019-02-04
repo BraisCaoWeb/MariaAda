@@ -63,7 +63,7 @@ document.addEventListener("DOMContentLoaded", function() {
 
 //SKETCHBOOK--------------------------------------
 
-document
+/* document
     .querySelector(".sketchbook__prev")
     .addEventListener("click", function() {
         plusSlides(-2);
@@ -95,4 +95,4 @@ function showSlides(n) {
     }
     slides[slideIndex - 1].style.display = "block";
     slides[slideIndex].style.display = "block";
-}
+} */
