@@ -1475,6 +1475,7 @@ body {
       margin-top: 2rem; } }
 
 .sketchbook {
-  margin-top: 4rem; }
+  margin-top: 4rem;
+  width: 75%; }
   .sketchbook__slider {
     margin-top: 4rem; }
