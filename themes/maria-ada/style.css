@@ -1473,3 +1473,8 @@ body {
     .description__cv {
       width: 100%;
       margin-top: 2rem; } }
+
+.sketchbook {
+  margin-top: 4rem; }
+  .sketchbook__slider {
+    margin-top: 4rem; }
