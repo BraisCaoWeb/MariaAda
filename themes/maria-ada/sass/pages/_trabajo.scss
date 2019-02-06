@@ -69,8 +69,14 @@
     &__volver {
         font-size: 3rem;
         transition: 0.3s linear;
-        position: absolute;
-        left: -4rem;
+        position: fixed;
+        left: 8rem;
+        top: 20rem;
+
+        @include respond(tab-port) {
+            /* width less than 900px? => 1rem = 8px */
+            left: 3rem;
+        }
     }
     &__volver:hover {
         transform: scale(1.1);
