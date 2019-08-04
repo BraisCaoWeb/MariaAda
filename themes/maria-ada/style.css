@@ -1345,13 +1345,8 @@ body {
   .trabajo__volver {
     font-size: 3rem;
     transition: 0.3s linear;
-    position: fixed;
-    left: 8rem;
-    top: 20rem; }
-    @media (max-width: 56.25em) {
-      .trabajo__volver {
-        /* width less than 900px? => 1rem = 8px */
-        left: 3rem; } }
+    position: absolute;
+    left: -4rem; }
   .trabajo__volver:hover {
     transform: scale(1.1);
     color: #ffda00;
